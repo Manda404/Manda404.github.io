@@ -11,18 +11,55 @@
       theme: {
         extend: {
           colors: { accent: '#38bdf8' },
-          fontFamily: { sans: ['Inter', 'sans-serif'] }
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          },
+          animation: {
+            fadeIn: 'fadeIn 0.8s ease-out forwards',
+            pulseSlow: 'pulse 3s ease-in-out infinite'
+          }
         }
       }
     }
   </script>
+  <style>
+    /* Scroll progress bar */
+    #progressBar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #38bdf8;
+      width: 0%;
+      z-index: 50;
+      transition: width 0.25s ease-out;
+    }
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+    .scroll-animate.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+
+<!-- Progress Bar -->
+<div id="progressBar"></div>
+
 <div class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
   <!-- Header -->
-  <header class="flex justify-between items-center">
+  <header class="flex justify-between items-center scroll-animate">
     <div>
-      <h1 class="text-4xl font-bold">Rostand Surel</h1>
+      <h1 class="text-4xl font-bold animate-pulseSlow">Rostand Surel</h1>
       <p class="text-gray-500 dark:text-gray-400" data-lang="fr">
         Data Scientist / ML Engineer — IA appliquée, Big Data & MLOps
       </p>
@@ -37,7 +74,7 @@
   </header>
 
   <!-- Profil -->
-  <section class="space-y-4">
+  <section class="space-y-4 scroll-animate">
     <h2 class="text-2xl font-semibold text-accent" data-lang="fr">Profil</h2>
     <h2 class="text-2xl font-semibold text-accent hidden" data-lang="en">Profile</h2>
     <p data-lang="fr">
@@ -51,98 +88,37 @@
     <blockquote class="italic text-gray-500 dark:text-gray-400">
       “Si vous voulez que la vie vous sourie, apportez-lui d’abord votre bonne humeur.” – Baruch Spinoza
     </blockquote>
-    <a href="cv.pdf" class="inline-block mt-4 px-4 py-2 bg-accent/10 text-accent rounded-md">📄 Télécharger mon CV</a>
+    <a href="cv.pdf" download class="inline-block mt-4 px-4 py-2 bg-accent text-white rounded-md hover:scale-105 transition transform duration-200">📄 Télécharger mon CV</a>
   </section>
 
   <!-- Réalisations -->
-  <section class="space-y-8">
+  <section class="space-y-8 scroll-animate">
     <h2 class="text-2xl font-semibold text-accent" data-lang="fr">Réalisations Clés</h2>
     <h2 class="text-2xl font-semibold text-accent hidden" data-lang="en">Key Projects</h2>
-
     <div class="space-y-6">
-      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow">
+      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow transform transition duration-500 hover:scale-[1.02] hover:shadow-lg hover:bg-accent/10">
         <h3 class="text-xl font-semibold">Prédiction de churn — AXA</h3>
         <p>Modélisation de la résiliation client sur 5M lignes avec PySpark, XGBoost, SHAP, FastAPI, CI/CD Azure.</p>
         <p class="mt-2 text-sm text-gray-500">🎯 +18% de précision sur les clients à risque</p>
       </div>
-      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow">
+      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow transform transition duration-500 hover:scale-[1.02] hover:shadow-lg hover:bg-accent/10">
         <h3 class="text-xl font-semibold">Segmentations prédictives — Sky TV</h3>
         <p>Modèles XGBoost + Deep Learning pour le ciblage CRM personnalisé, suivi via MLflow.</p>
         <p class="mt-2 text-sm text-gray-500">🎯 +24% d'efficacité marketing</p>
       </div>
-      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow">
-        <h3 class="text-xl font-semibold">BrevetAnalyzer — IA Générative + RAG</h3>
-        <p>Outil Streamlit utilisant RAG, embeddings, et LLM pour analyse de brevets. Déploiement AWS.</p>
-        <p class="mt-2 text-sm text-gray-500">🎯 -65% du temps de recherche R&D</p>
-      </div>
-      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow">
-        <h3 class="text-xl font-semibold">SignalGuard — AIOps + Observabilité</h3>
-        <p>Monitoring Prometheus + Grafana + module de détection automatique d'anomalies.</p>
-        <p class="mt-2 text-sm text-gray-500">🎯 +50% de réactivité opérationnelle</p>
-      </div>
     </div>
-  </section>
-
-  <!-- Compétences -->
-  <section class="space-y-4">
-    <h2 class="text-2xl font-semibold text-accent" data-lang="fr">Stack Technique</h2>
-    <h2 class="text-2xl font-semibold text-accent hidden" data-lang="en">Technical Skills</h2>
-    <div class="flex flex-wrap gap-2 text-sm">
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Python</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">PySpark</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Databricks</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">XGBoost</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">CatBoost</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">LangChain</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">RAG</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">LLMs</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">MLflow</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">FastAPI</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Docker</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Airflow</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">AWS</span>
-      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Azure DevOps</span>
-    </div>
-  </section>
-
-  <!-- Expériences -->
-  <section class="space-y-4">
-    <h2 class="text-2xl font-semibold text-accent">Expériences</h2>
-    <ul class="space-y-3 text-sm">
-      <li><b>AXA</b> · Data Scientist · 2024 — Aujourd'hui</li>
-      <li><b>Safran Seats</b> · Data Scientist · 2024</li>
-      <li><b>Sky TV</b> · Data Scientist · 2022 — 2023</li>
-      <li><b>Kuwait Petroleum</b> · Data Engineer · 2020 — 2022</li>
-    </ul>
-  </section>
-
-  <!-- Formation -->
-  <section>
-    <h2 class="text-2xl font-semibold text-accent">Formation</h2>
-    <ul class="text-sm list-disc list-inside mt-2">
-      <li>Master Data Science & IA · ECE Lyon · 2023–2024</li>
-      <li>Licence Ingénierie Informatique · Polytechnique Turin · 2017–2020</li>
-    </ul>
-  </section>
-
-  <!-- Divers -->
-  <section>
-    <h2 class="text-2xl font-semibold text-accent">Autres</h2>
-    <ul class="text-sm list-disc list-inside mt-2">
-      <li>Langues : Français (C2), Anglais (B2), Italien (B2)</li>
-      <li>Soft Skills : Autonomie, Esprit analytique, Communication claire</li>
-      <li>Centres d'intérêt : Voyages, IA générative, Veille techno</li>
-    </ul>
   </section>
 
   <!-- Contact -->
-  <footer class="text-sm text-center text-gray-500 pt-10 border-t dark:border-gray-700">
+  <footer class="text-sm text-center text-gray-500 pt-10 border-t dark:border-gray-700 scroll-animate">
     <p>📍 Versailles, France</p>
     <p>📧 <a class="underline" href="mailto:rostandsurel@yahoo.com">rostandsurel@yahoo.com</a></p>
     <p>🌐 <a class="underline" href="https://github.com/Manda404" target="_blank">github.com/Manda404</a></p>
     <p>🔗 <a class="underline" href="https://linkedin.com/in/rostand-surel" target="_blank">linkedin.com/in/rostand-surel</a></p>
   </footer>
+
 </div>
+
 <script>
   function toggleLang() {
     document.querySelectorAll('[data-lang]').forEach(el => el.classList.toggle('hidden'));
@@ -150,6 +126,27 @@
   function toggleDark() {
     document.documentElement.classList.toggle('dark');
   }
+
+  // Scroll Progress Bar
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
+    document.getElementById('progressBar').style.width = scrollPercent + '%';
+  });
+
+  // Scroll reveal animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.scroll-animate').forEach(el => {
+    observer.observe(el);
+  });
 </script>
 </body>
 </html>
