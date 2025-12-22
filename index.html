@@ -10,139 +10,146 @@
       darkMode: 'class',
       theme: {
         extend: {
-          colors: {
-            accent: '#38bdf8',
-          }
+          colors: { accent: '#38bdf8' },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
         }
       }
     }
   </script>
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
-
-  <div class="max-w-4xl mx-auto px-6 py-16 space-y-12">
-
-    <!-- Header -->
-    <header class="flex justify-between items-center">
-      <div>
-        <h1 class="text-4xl font-bold">Rostand Surel</h1>
-        <p class="text-gray-500 dark:text-gray-400" data-lang="fr">
-          Data Scientist / ML Engineer — IA appliquée, Big Data & MLOps
-        </p>
-        <p class="text-gray-500 dark:text-gray-400 hidden" data-lang="en">
-          Data Scientist / ML Engineer — Applied AI, Big Data & MLOps
-        </p>
-      </div>
-      <div class="space-x-4 text-sm text-gray-500">
-        <button onclick="toggleLang()">FR / EN</button>
-        <button onclick="toggleDark()" class="hover:underline">🌙 / ☀️</button>
-      </div>
-    </header>
-
-    <!-- About -->
-    <section class="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow">
-      <p data-lang="fr">
-        Data Scientist avec plus de <b>4 ans d’expérience</b> dans la conception de solutions
-        data à fort impact business : churn, recommandation, NLP, IA générative.
-        À l’aise sur toute la chaîne : <b>exploration → modélisation → explicabilité → production</b>.
+<div class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+  <!-- Header -->
+  <header class="flex justify-between items-center">
+    <div>
+      <h1 class="text-4xl font-bold">Rostand Surel</h1>
+      <p class="text-gray-500 dark:text-gray-400" data-lang="fr">
+        Data Scientist / ML Engineer — IA appliquée, Big Data & MLOps
       </p>
-      <p data-lang="en" class="hidden">
-        Data Scientist with <b>4+ years of experience</b> delivering high-impact data solutions:
-        churn prediction, recommendation systems, NLP and Generative AI.
-        Strong end-to-end ownership: <b>exploration → modeling → explainability → production</b>.
+      <p class="text-gray-500 dark:text-gray-400 hidden" data-lang="en">
+        Data Scientist / ML Engineer — Applied AI, Big Data & MLOps
       </p>
-      <div class="mt-4 space-x-4">
-        <a href="https://github.com/Manda404" class="text-accent hover:underline">GitHub</a>
-        <a href="https://www.linkedin.com/in/rostand-surel" class="text-accent hover:underline">LinkedIn</a>
-        <a href="mailto:rostandsurel@yahoo.com" class="text-accent hover:underline">Email</a>
+    </div>
+    <div class="space-x-4 text-sm text-gray-500">
+      <button onclick="toggleLang()">FR / EN</button>
+      <button onclick="toggleDark()" class="hover:underline">🌙 / ☀️</button>
+    </div>
+  </header>
+
+  <!-- Profil -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-semibold text-accent" data-lang="fr">Profil</h2>
+    <h2 class="text-2xl font-semibold text-accent hidden" data-lang="en">Profile</h2>
+    <p data-lang="fr">
+      Doté d’une solide expérience en analyse de données, machine learning et data engineering,
+      je suis passionné par les projets à fort impact. J’aime transformer les données en solutions concrètes.
+    </p>
+    <p data-lang="en" class="hidden">
+      Strong background in data analysis, machine learning and engineering.
+      Passionate about creating real-world value through data-driven solutions.
+    </p>
+    <blockquote class="italic text-gray-500 dark:text-gray-400">
+      “Si vous voulez que la vie vous sourie, apportez-lui d’abord votre bonne humeur.” – Baruch Spinoza
+    </blockquote>
+    <a href="cv.pdf" class="inline-block mt-4 px-4 py-2 bg-accent/10 text-accent rounded-md">📄 Télécharger mon CV</a>
+  </section>
+
+  <!-- Réalisations -->
+  <section class="space-y-8">
+    <h2 class="text-2xl font-semibold text-accent" data-lang="fr">Réalisations Clés</h2>
+    <h2 class="text-2xl font-semibold text-accent hidden" data-lang="en">Key Projects</h2>
+
+    <div class="space-y-6">
+      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-xl font-semibold">Prédiction de churn — AXA</h3>
+        <p>Modélisation de la résiliation client sur 5M lignes avec PySpark, XGBoost, SHAP, FastAPI, CI/CD Azure.</p>
+        <p class="mt-2 text-sm text-gray-500">🎯 +18% de précision sur les clients à risque</p>
       </div>
-      <a href="mailto:rostandsurel@yahoo.com" class="inline-block mt-4 px-4 py-2 bg-accent/10 text-accent rounded-md">📩 Me contacter</a>
-    </section>
-
-    <!-- Projects -->
-    <section>
-      <h2 class="text-2xl font-semibold text-accent" data-lang="fr">Projets sélectionnés</h2>
-      <h2 class="text-2xl font-semibold text-accent hidden" data-lang="en">Selected Projects</h2>
-
-      <div class="space-y-6 mt-6">
-        <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow">
-          <h3 class="text-xl font-medium">Churn Prediction — AXA</h3>
-          <p>Modélisation de la résiliation client à grande échelle (~5M lignes) avec
-            XGBoost & CatBoost, SHAP, pipelines PySpark, FastAPI et CI/CD Azure.</p>
-          <p class="mt-2"><b>Impact :</b> +18% de précision sur les clients à risque</p>
-        </div>
-
-        <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow">
-          <h3 class="text-xl font-medium">Incremental Boosting Framework</h3>
-          <p>Framework d’apprentissage incrémental pour modèles de boosting,
-            conçu pour la stabilité long terme en production.</p>
-          <p class="mt-2"><b>Impact :</b> −30% de surapprentissage incrémental</p>
-        </div>
-
-        <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow">
-          <h3 class="text-xl font-medium">BrevetAnalyzer IA — RAG</h3>
-          <p>Outil intelligent d’analyse de brevets combinant recherche sémantique,
-            embeddings et IA générative, déployé sur AWS avec Streamlit.</p>
-          <p class="mt-2"><b>Impact :</b> −65% du temps de recherche R&D</p>
-        </div>
+      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-xl font-semibold">Segmentations prédictives — Sky TV</h3>
+        <p>Modèles XGBoost + Deep Learning pour le ciblage CRM personnalisé, suivi via MLflow.</p>
+        <p class="mt-2 text-sm text-gray-500">🎯 +24% d'efficacité marketing</p>
       </div>
-    </section>
-
-    <!-- Skills -->
-    <section>
-      <h2 class="text-2xl font-semibold text-accent" data-lang="fr">Stack technique</h2>
-      <h2 class="text-2xl font-semibold text-accent hidden" data-lang="en">Technical Stack</h2>
-
-      <div class="flex flex-wrap gap-3 mt-4 bg-gray-100 dark:bg-gray-800 p-4 rounded-xl shadow text-sm">
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Python</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">SQL</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">PySpark</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Databricks</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">XGBoost</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">CatBoost</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">LightGBM</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">NLP</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">RAG</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">LLM</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">MLflow</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">FastAPI</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Docker</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">CI/CD</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">AWS</span>
-        <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Azure DevOps</span>
+      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-xl font-semibold">BrevetAnalyzer — IA Générative + RAG</h3>
+        <p>Outil Streamlit utilisant RAG, embeddings, et LLM pour analyse de brevets. Déploiement AWS.</p>
+        <p class="mt-2 text-sm text-gray-500">🎯 -65% du temps de recherche R&D</p>
       </div>
-    </section>
+      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-xl font-semibold">SignalGuard — AIOps + Observabilité</h3>
+        <p>Monitoring Prometheus + Grafana + module de détection automatique d'anomalies.</p>
+        <p class="mt-2 text-sm text-gray-500">🎯 +50% de réactivité opérationnelle</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Value -->
-    <section>
-      <h2 class="text-2xl font-semibold text-accent" data-lang="fr">Ce que j’apporte</h2>
-      <h2 class="text-2xl font-semibold text-accent hidden" data-lang="en">What I Bring</h2>
+  <!-- Compétences -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-semibold text-accent" data-lang="fr">Stack Technique</h2>
+    <h2 class="text-2xl font-semibold text-accent hidden" data-lang="en">Technical Skills</h2>
+    <div class="flex flex-wrap gap-2 text-sm">
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Python</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">PySpark</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Databricks</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">XGBoost</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">CatBoost</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">LangChain</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">RAG</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">LLMs</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">MLflow</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">FastAPI</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Docker</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Airflow</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">AWS</span>
+      <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full">Azure DevOps</span>
+    </div>
+  </section>
 
-      <ul class="mt-4 space-y-2 bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow list-disc list-inside">
-        <li>✔ Modèles réellement déployés en production</li>
-        <li>✔ Forte culture MLOps & qualité logicielle</li>
-        <li>✔ Explicabilité & confiance métier (SHAP)</li>
-        <li>✔ Communication fluide avec équipes non-tech</li>
-      </ul>
-    </section>
+  <!-- Expériences -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-semibold text-accent">Expériences</h2>
+    <ul class="space-y-3 text-sm">
+      <li><b>AXA</b> · Data Scientist · 2024 — Aujourd'hui</li>
+      <li><b>Safran Seats</b> · Data Scientist · 2024</li>
+      <li><b>Sky TV</b> · Data Scientist · 2022 — 2023</li>
+      <li><b>Kuwait Petroleum</b> · Data Engineer · 2020 — 2022</li>
+    </ul>
+  </section>
 
-    <!-- Footer -->
-    <footer class="text-sm text-gray-500 text-center pt-10 border-t border-gray-200 dark:border-gray-700">
-      <p>📍 Versailles, France</p>
-      <p>💼 CDI — Data Scientist / ML Engineer</p>
-    </footer>
+  <!-- Formation -->
+  <section>
+    <h2 class="text-2xl font-semibold text-accent">Formation</h2>
+    <ul class="text-sm list-disc list-inside mt-2">
+      <li>Master Data Science & IA · ECE Lyon · 2023–2024</li>
+      <li>Licence Ingénierie Informatique · Polytechnique Turin · 2017–2020</li>
+    </ul>
+  </section>
 
-  </div>
+  <!-- Divers -->
+  <section>
+    <h2 class="text-2xl font-semibold text-accent">Autres</h2>
+    <ul class="text-sm list-disc list-inside mt-2">
+      <li>Langues : Français (C2), Anglais (B2), Italien (B2)</li>
+      <li>Soft Skills : Autonomie, Esprit analytique, Communication claire</li>
+      <li>Centres d'intérêt : Voyages, IA générative, Veille techno</li>
+    </ul>
+  </section>
 
-  <script>
-    function toggleLang() {
-      document.querySelectorAll('[data-lang]').forEach(el => el.classList.toggle('hidden'));
-    }
-
-    function toggleDark() {
-      document.documentElement.classList.toggle('dark');
-    }
-  </script>
-
+  <!-- Contact -->
+  <footer class="text-sm text-center text-gray-500 pt-10 border-t dark:border-gray-700">
+    <p>📍 Versailles, France</p>
+    <p>📧 <a class="underline" href="mailto:rostandsurel@yahoo.com">rostandsurel@yahoo.com</a></p>
+    <p>🌐 <a class="underline" href="https://github.com/Manda404" target="_blank">github.com/Manda404</a></p>
+    <p>🔗 <a class="underline" href="https://linkedin.com/in/rostand-surel" target="_blank">linkedin.com/in/rostand-surel</a></p>
+  </footer>
+</div>
+<script>
+  function toggleLang() {
+    document.querySelectorAll('[data-lang]').forEach(el => el.classList.toggle('hidden'));
+  }
+  function toggleDark() {
+    document.documentElement.classList.toggle('dark');
+  }
+</script>
 </body>
 </html>
