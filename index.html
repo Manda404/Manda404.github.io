@@ -7,17 +7,18 @@
 
 <style>
 :root {
-  --bg: #0f172a;
+  --bg: #0b1020;
   --card: #111827;
   --text: #e5e7eb;
   --muted: #9ca3af;
   --accent: #38bdf8;
+  --accent-soft: rgba(56,189,248,0.15);
 }
 
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont;
-  background: var(--bg);
+  background: radial-gradient(circle at top, #111827, var(--bg));
   color: var(--text);
   line-height: 1.7;
 }
@@ -25,49 +26,87 @@ body {
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 48px 20px;
+  padding: 64px 20px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
-h1 { font-size: 2.5rem; margin: 0; }
-h2 { margin-top: 48px; color: var(--accent); }
-h3 { margin-bottom: 8px; }
+h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--muted);
+  max-width: 600px;
+}
+
+h2 {
+  margin-top: 64px;
+  color: var(--accent);
+}
+
+h3 {
+  margin-bottom: 6px;
+}
 
 .card {
-  background: var(--card);
-  border-radius: 16px;
-  padding: 24px;
-  margin-top: 24px;
+  background: linear-gradient(180deg, var(--card), #0b1224);
+  border-radius: 18px;
+  padding: 28px;
+  margin-top: 28px;
+  border: 1px solid rgba(255,255,255,0.05);
   animation: fadeIn 0.6s ease forwards;
+}
+
+.card:hover {
+  border-color: var(--accent-soft);
 }
 
 .tags span {
   display: inline-block;
-  margin: 4px;
-  padding: 6px 10px;
-  background: #1f2933;
-  border-radius: 8px;
+  margin: 6px 6px 0 0;
+  padding: 7px 12px;
+  background: #1f2937;
+  border-radius: 999px;
   font-size: 0.85rem;
 }
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: var(--accent-soft);
+  border-radius: 10px;
+}
 
 .lang-switch {
   cursor: pointer;
   color: var(--muted);
+  font-size: 0.9rem;
 }
 
-.hidden { display: none; }
+.hidden {
+  display: none;
+}
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
 }
 </style>
@@ -87,23 +126,28 @@ function toggleLang() {
 <header>
   <div>
     <h1>Rostand Surel</h1>
-    <p data-lang="fr">Data Scientist / ML Engineer — IA appliquée & MLOps</p>
-    <p data-lang="en" class="hidden">Data Scientist / ML Engineer — Applied AI & MLOps</p>
+    <p class="subtitle" data-lang="fr">
+      Data Scientist / ML Engineer — IA appliquée, Big Data & MLOps
+    </p>
+    <p class="subtitle hidden" data-lang="en">
+      Data Scientist / ML Engineer — Applied AI, Big Data & MLOps
+    </p>
   </div>
   <div class="lang-switch" onclick="toggleLang()">FR / EN</div>
 </header>
 
+<!-- ABOUT -->
 <section class="card">
   <p data-lang="fr">
-    Data Scientist avec 4+ ans d’expérience sur des projets à fort impact business :
-    churn, recommandation, NLP, IA générative et Big Data.
-    Expertise de bout en bout : exploration, modélisation, explicabilité, déploiement.
+    Data Scientist avec plus de <b>4 ans d’expérience</b> dans la conception de solutions
+    data à fort impact business : churn, recommandation, NLP, IA générative.
+    À l’aise sur toute la chaîne : <b>exploration → modélisation → explicabilité → production</b>.
   </p>
 
   <p data-lang="en" class="hidden">
-    Data Scientist with 4+ years of experience delivering high-impact AI solutions:
+    Data Scientist with <b>4+ years of experience</b> delivering high-impact data solutions:
     churn prediction, recommendation systems, NLP and Generative AI.
-    Strong end-to-end expertise from data exploration to production deployment.
+    Strong end-to-end ownership: <b>exploration → modeling → explainability → production</b>.
   </p>
 
   <p>
@@ -111,72 +155,77 @@ function toggleLang() {
     <a href="https://www.linkedin.com/in/rostand-surel">LinkedIn</a> ·
     <a href="mailto:rostandsurel@yahoo.com">Email</a>
   </p>
+
+  <a class="btn" href="mailto:rostandsurel@yahoo.com">📩 Me contacter</a>
 </section>
 
+<!-- PROJECTS -->
 <section>
-<h2 data-lang="fr">Projets clés</h2>
-<h2 data-lang="en" class="hidden">Key Projects</h2>
+<h2 data-lang="fr">Projets sélectionnés</h2>
+<h2 data-lang="en" class="hidden">Selected Projects</h2>
 
 <div class="card">
   <h3>Churn Prediction — AXA</h3>
-  <p data-lang="fr">
+  <p>
     Modélisation de la résiliation client à grande échelle (~5M lignes) avec
     XGBoost & CatBoost, SHAP, pipelines PySpark, FastAPI et CI/CD Azure.
   </p>
-  <p data-lang="en" class="hidden">
-    Large-scale churn prediction (~5M rows) using XGBoost & CatBoost,
-    SHAP explainability, PySpark pipelines, FastAPI and Azure CI/CD.
-  </p>
-  <b>Impact :</b> +18% précision clients à risque
+  <p><b>Impact :</b> +18% de précision sur les clients à risque</p>
 </div>
 
 <div class="card">
   <h3>Incremental Boosting Framework</h3>
   <p>
-    Framework d’apprentissage incrémental pour modèles de boosting
-    (XGBoost, CatBoost) avec contrôle du surapprentissage et stabilité long terme.
+    Framework d’apprentissage incrémental pour modèles de boosting,
+    conçu pour la stabilité long terme en production.
   </p>
-  <b>Impact :</b> −30% overfitting incrémental
+  <p><b>Impact :</b> −30% de surapprentissage incrémental</p>
 </div>
 
 <div class="card">
-  <h3>BrevetAnalyzer IA (RAG)</h3>
+  <h3>BrevetAnalyzer IA — RAG</h3>
   <p>
-    Outil d’analyse intelligente de brevets basé sur RAG, embeddings,
-    IA générative, Streamlit et AWS.
+    Outil intelligent d’analyse de brevets combinant recherche sémantique,
+    embeddings et IA générative, déployé sur AWS avec Streamlit.
   </p>
-  <b>Impact :</b> −65% temps de recherche R&D
+  <p><b>Impact :</b> −65% du temps de recherche R&D</p>
 </div>
 </section>
 
+<!-- SKILLS -->
 <section>
-<h2 data-lang="fr">Compétences</h2>
-<h2 data-lang="en" class="hidden">Skills</h2>
+<h2 data-lang="fr">Stack technique</h2>
+<h2 data-lang="en" class="hidden">Technical Stack</h2>
 
 <div class="card tags">
   <span>Python</span><span>SQL</span><span>PySpark</span><span>Databricks</span>
-  <span>XGBoost</span><span>CatBoost</span><span>NLP</span><span>RAG</span>
-  <span>MLflow</span><span>FastAPI</span><span>Docker</span>
+  <span>XGBoost</span><span>CatBoost</span><span>LightGBM</span>
+  <span>NLP</span><span>RAG</span><span>LLM</span>
+  <span>MLflow</span><span>FastAPI</span>
+  <span>Docker</span><span>CI/CD</span>
   <span>AWS</span><span>Azure DevOps</span>
 </div>
 </section>
 
+<!-- VALUE -->
 <section>
-<h2 data-lang="fr">Positionnement recruteur</h2>
-<h2 data-lang="en" class="hidden">Recruiter Positioning</h2>
+<h2 data-lang="fr">Ce que j’apporte</h2>
+<h2 data-lang="en" class="hidden">What I Bring</h2>
 
 <div class="card">
   <ul>
-    <li>✔ Capacité à livrer des modèles en production</li>
+    <li>✔ Modèles réellement déployés en production</li>
     <li>✔ Forte culture MLOps & qualité logicielle</li>
-    <li>✔ Communication claire avec équipes métier</li>
-    <li>✔ Expérience assurance, industrie, big data</li>
+    <li>✔ Explicabilité & confiance métier (SHAP)</li>
+    <li>✔ Communication fluide avec équipes non-tech</li>
   </ul>
 </div>
 </section>
 
+<!-- FOOTER -->
 <section class="card">
-  <p>📍 Versailles, France — CDI recherché</p>
+  <p>📍 Versailles, France</p>
+  <p>💼 CDI — Data Scientist / ML Engineer</p>
 </section>
 
 </div>
