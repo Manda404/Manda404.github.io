@@ -1,245 +1,57 @@
 <!DOCTYPE html>
-<html lang="fr" class="dark">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rostand Surel | Data Scientist / ML Engineer</title>
+  <title>Rostand Surel | Data Scientist & ML Engineer</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
 
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            accent: '#38bdf8',
-            card: '#111827'
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif']
-          },
-          keyframes: {
-            fadeUp: {
-              '0%': { opacity: '0', transform: 'translateY(24px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' }
-            }
-          },
-          animation: {
-            fadeUp: 'fadeUp 0.8s ease-out forwards'
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    #progressBar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 4px;
-      background: #38bdf8;
-      width: 0%;
-      z-index: 50;
-    }
-    .reveal {
-      opacity: 0;
-      transform: translateY(32px);
-      transition: all 0.8s ease-out;
-    }
-    .reveal.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <script defer src="webgl.js"></script>
+  <script defer src="app.js"></script>
 </head>
 
-<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+<body class="dark-mode">
 
-<div id="progressBar"></div>
+  <!-- WebGL Background -->
+  <canvas id="webgl-canvas"></canvas>
 
-<div class="max-w-6xl mx-auto px-6 py-14 space-y-20">
+  <!-- Main UI -->
+  <main class="container">
 
-<!-- ================= HEADER ================= -->
-<header class="flex justify-between items-start reveal">
-  <div>
-    <h1 class="text-4xl font-bold tracking-tight">Rostand Surel</h1>
-    <p class="mt-2 text-gray-500 dark:text-gray-400" data-lang="fr">
-      Data Scientist / ML Engineer — Production, Big Data & MLOps
-    </p>
-    <p class="mt-2 text-gray-500 dark:text-gray-400 hidden" data-lang="en">
-      Data Scientist / ML Engineer — Production, Big Data & MLOps
-    </p>
-  </div>
+    <!-- Header -->
+    <header class="hero glass">
+      <h1>Rostand Surel</h1>
+      <h2>Data Scientist / ML Engineer</h2>
+      <p class="subtitle">
+        Production ML · Big Data · MLOps · GenAI · 4+ years experience
+      </p>
 
-  <div class="flex items-center gap-4 text-sm text-gray-500">
-    <button onclick="toggleLang()">FR / EN</button>
-    <button onclick="toggleDark()">🌙 / ☀️</button>
-  </div>
-</header>
+      <div class="actions">
+        <a href="assets/Rostand_Surel_CV.pdf" target="_blank" class="btn primary">Download CV</a>
+        <a href="https://linkedin.com/in/rostand-surel" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://github.com/Manda404" target="_blank" class="btn">GitHub</a>
+      </div>
+    </header>
 
-<!-- ================= EXPERT SNAPSHOT ================= -->
-<section class="grid grid-cols-2 md:grid-cols-4 gap-6 reveal">
-  <div class="bg-gray-100 dark:bg-card p-5 rounded-xl text-center">
-    <p class="text-3xl font-bold text-accent">4+ yrs</p>
-    <p class="text-sm text-gray-500">Experience</p>
-  </div>
-  <div class="bg-gray-100 dark:bg-card p-5 rounded-xl text-center">
-    <p class="text-3xl font-bold text-accent">5M+</p>
-    <p class="text-sm text-gray-500">Rows processed</p>
-  </div>
-  <div class="bg-gray-100 dark:bg-card p-5 rounded-xl text-center">
-    <p class="text-3xl font-bold text-accent">Prod</p>
-    <p class="text-sm text-gray-500">ML systems</p>
-  </div>
-  <div class="bg-gray-100 dark:bg-card p-5 rounded-xl text-center">
-    <p class="text-3xl font-bold text-accent">+18%</p>
-    <p class="text-sm text-gray-500">Business impact</p>
-  </div>
-</section>
+    <!-- Tiles -->
+    <section class="tiles">
+      <button class="tile glass" data-section="overview">Overview</button>
+      <button class="tile glass" data-section="experience">Experience</button>
+      <button class="tile glass" data-section="projects">Projects</button>
+      <button class="tile glass" data-section="skills">Skills</button>
+      <button class="tile glass" data-section="architecture">Architecture</button>
+      <button class="tile glass" data-section="contact">Contact</button>
+    </section>
 
-<!-- ================= PROFILE ================= -->
-<section class="space-y-6 reveal">
-  <h2 class="text-2xl font-semibold text-accent">Profil</h2>
+    <!-- Content -->
+    <section id="content" class="glass hidden">
+      <button id="back-btn">← Back</button>
+      <div id="content-body"></div>
+    </section>
 
-  <p data-lang="fr">
-    Data Scientist / ML Engineer orienté <b>production et impact métier</b>, avec plus de
-    4 ans d’expérience sur des problématiques complexes : churn à grande échelle,
-    segmentation client, NLP et IA générative.
-    J’interviens sur toute la chaîne de valeur :
-    <b>data → modèle → explicabilité → déploiement → monitoring</b>.
-  </p>
-
-  <p data-lang="en" class="hidden">
-    Data Scientist / ML Engineer focused on <b>production-grade ML systems</b>,
-    with 4+ years of experience on large-scale churn, recommendation systems,
-    NLP and Generative AI.
-    Strong end-to-end ownership from data to deployment and monitoring.
-  </p>
-
-  <blockquote class="italic text-gray-500 dark:text-gray-400 border-l-4 border-accent pl-4">
-    “Si vous voulez que la vie vous sourie, apportez-lui d’abord votre bonne humeur.” — Baruch Spinoza
-  </blockquote>
-
-  <a href="cv.pdf" download
-     class="inline-block px-5 py-2 bg-accent text-white rounded-lg hover:scale-105 transition">
-    📄 Télécharger mon CV
-  </a>
-</section>
-
-<!-- ================= METHODOLOGY ================= -->
-<section class="space-y-8 reveal">
-  <h2 class="text-2xl font-semibold text-accent">Méthodologie</h2>
-
-  <div class="grid md:grid-cols-2 gap-6">
-    <div class="bg-gray-100 dark:bg-card p-6 rounded-xl">
-      📊 <b>Data-first</b><br>
-      Exploration rigoureuse, feature engineering métier,
-      qualité et robustesse des données.
-    </div>
-    <div class="bg-gray-100 dark:bg-card p-6 rounded-xl">
-      🧠 <b>Modeling pragmatique</b><br>
-      Choix des modèles guidé par le contexte business et opérationnel.
-    </div>
-    <div class="bg-gray-100 dark:bg-card p-6 rounded-xl">
-      🔍 <b>Explainability & Trust</b><br>
-      SHAP, interprétation métier, adoption des modèles.
-    </div>
-    <div class="bg-gray-100 dark:bg-card p-6 rounded-xl">
-      🚀 <b>Production-ready</b><br>
-      APIs, batch scoring, CI/CD, monitoring et MLOps.
-    </div>
-  </div>
-</section>
-
-<!-- ================= PROJECTS ================= -->
-<section class="space-y-10 reveal">
-  <h2 class="text-2xl font-semibold text-accent">Réalisations clés</h2>
-
-  <div class="bg-gray-100 dark:bg-card p-6 rounded-xl">
-    <h3 class="text-xl font-semibold">Churn Prediction — AXA</h3>
-    <p class="mt-2">
-      <b>Contexte :</b> assurance, datasets massifs (~5M lignes)<br>
-      <b>Solution :</b> XGBoost & CatBoost, SHAP, PySpark, FastAPI<br>
-      <b>Déploiement :</b> API REST intégrée au CRM, CI/CD Azure
-    </p>
-    <p class="mt-2 text-sm text-gray-500">
-      🎯 Impact : +18% de précision sur les clients à risque
-    </p>
-  </div>
-
-  <div class="bg-gray-100 dark:bg-card p-6 rounded-xl">
-    <h3 class="text-xl font-semibold">Segmentation prédictive — Sky TV</h3>
-    <p class="mt-2">
-      Modèles de segmentation CRM basés sur XGBoost et deep learning,
-      orchestration MLflow et collaboration étroite avec le marketing.
-    </p>
-    <p class="mt-2 text-sm text-gray-500">
-      🎯 Impact : +24% d’efficacité des campagnes ciblées
-    </p>
-  </div>
-</section>
-
-<!-- ================= TECH STACK ================= -->
-<section class="space-y-6 reveal">
-  <h2 class="text-2xl font-semibold text-accent">Stack technique</h2>
-
-  <div class="flex flex-wrap gap-3">
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">Python</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">SQL</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">PySpark</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">Databricks</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">XGBoost</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">CatBoost</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">NLP</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">RAG</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">MLflow</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">FastAPI</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">Docker</span>
-    <span class="px-3 py-1 bg-gray-200 dark:bg-card rounded-full">AWS / Azure</span>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="text-center text-sm text-gray-500 pt-12 border-t dark:border-gray-700 reveal">
-  <p>📍 Versailles, France</p>
-  <p>💼 CDI — Data Scientist / ML Engineer</p>
-  <p>🚀 Disponible immédiatement</p>
-  <p class="mt-2">
-    <a href="mailto:rostandsurel@yahoo.com" class="underline">Email</a> ·
-    <a href="https://github.com/Manda404" class="underline" target="_blank">GitHub</a> ·
-    <a href="https://linkedin.com/in/rostand-surel" class="underline" target="_blank">LinkedIn</a>
-  </p>
-</footer>
-
-</div>
-
-<script>
-function toggleLang() {
-  document.querySelectorAll('[data-lang]').forEach(el => el.classList.toggle('hidden'));
-}
-function toggleDark() {
-  document.documentElement.classList.toggle('dark');
-}
-
-// Scroll progress
-window.addEventListener('scroll', () => {
-  const scrollTop = document.documentElement.scrollTop;
-  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  document.getElementById('progressBar').style.width = (scrollTop / scrollHeight) * 100 + '%';
-});
-
-// Reveal animations
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('show');
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+  </main>
 
 </body>
 </html>
