@@ -1,22 +1,29 @@
-import { initHero } from './init/hero.init.js';
-
-async function loadPartial(targetId, path, initFn) {
-    const target = document.querySelector(targetId);
-    if (!target) return;
-
+async function loadSection(id, file) {
     try {
-        const response = await fetch(path);
+        const response = await fetch(`sections/${file}`);
+        if (!response.ok) {
+            throw new Error(`Failed to load ${file}`);
+        }
         const html = await response.text();
-        target.innerHTML = html;
-
-        if (initFn) initFn();
-    } catch (e) {
-        console.error('Erreur chargement', path, e);
+        document.getElementById(id).innerHTML = html;
+    } catch (error) {
+        console.error(error);
     }
 }
 
-// Navbar
-loadPartial('#navbar', 'partials/navbar.html');
+async function loadAllSections() {
+    await loadSection("navbar", "navbar.html");
+    await loadSection("hero", "hero.html");
+    await loadSection("about", "about.html");
+    await loadSection("skills", "skills.html");
+    await loadSection("github", "github.html");
+    await loadSection("education", "education.html");
+    await loadSection("experience", "experience.html");
+    await loadSection("projects", "projects.html");
+    await loadSection("blog", "blog.html");
+    await loadSection("testimonials", "testimonials.html");
+    await loadSection("contact", "contact.html");
+    await loadSection("footer", "footer.html");
+}
 
-// Hero
-loadPartial('#hero', 'sections/hero/hero.html', initHero);
+document.addEventListener("DOMContentLoaded", loadAllSections);
