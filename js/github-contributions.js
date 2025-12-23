@@ -8,19 +8,16 @@
 class GitHubContributions {
     constructor() {
         this.currentYear = 2025;
-        this.years = ['2025', '2024', '2023', '2022', '2021', '2020'];
+        this.years = ['2025', '2024', '2023'];
 
         // Cache so we don't recompute in the same session
         this.yearData = {};
 
         // Full-year target totals (approximate)
         this.targetContributions = {
-            '2025': 729,  // interpreted as full-year target, scaled by date
-            '2024': 686,
-            '2023': 450,
-            '2022': 980,
-            '2021': 230,
-            '2020': 160
+            '2025': 125,  // interpreted as full-year target, scaled by date
+            '2024': 100,
+            '2023': 50
         };
 
         // DOM references
