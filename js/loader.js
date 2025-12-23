@@ -6,10 +6,13 @@ async function loadPartial(targetId, path) {
         const response = await fetch(path);
         const html = await response.text();
         target.innerHTML = html;
-    } catch (error) {
-        console.error(`Erreur chargement ${path}`, error);
+    } catch (e) {
+        console.error('Erreur chargement', path, e);
     }
 }
 
-// Charger la navbar
+// Navbar
 loadPartial('#navbar', 'partials/navbar.html');
+
+// Hero section
+loadPartial('#hero', 'sections/hero/hero.html');
