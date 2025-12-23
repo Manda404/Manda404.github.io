@@ -1,0 +1,175 @@
+/* Cursor-Themed (Dark/Graphite Blue) Theme */
+[data-theme="dark"] {
+    --bg-primary: #171b23; /* dark blue/graphite */
+    --bg-secondary: #202736;
+    --section-bg: #141923;
+    --card-bg: rgba(60, 72, 98, 0.12);
+    --hover-bg: rgba(93, 155, 255, 0.12);
+    --input-bg: rgba(60, 72, 98, 0.16);
+
+    --text-primary: #d1e2fa;
+    --text-secondary: #8eb2d9;
+
+    --accent-color: #5d9bff;
+    --accent-gradient-start: #5d9bff;
+    --accent-hover: #3486ec;
+    --secondary-accent: #33ffc2;
+    --accent-gradient-end: #33ffc2;
+    --success-color: #27c79c;
+
+    --border-color: rgba(81, 164, 253, 0.12);
+    --border-hover: rgba(81, 164, 253, 0.22);
+
+    --badge-bg: rgba(93, 155, 255, 0.13);
+    --badge-text: #aed9fb;
+    --badge-border: rgba(93, 155, 255, 0.22);
+
+    --tech-bg: rgba(123, 168, 255, 0.10);
+    --tech-text: #e6f0fa;
+    --tech-border: rgba(93, 155, 255, 0.14);
+
+    --shadow-small: 0 2px 8px rgba(36, 68, 142, 0.21);
+    --shadow-medium: 0 8px 32px rgba(36, 68, 142, 0.36);
+    --shadow-large: 0 20px 64px rgba(36, 68, 142, 0.51);
+    --shadow-accent: rgba(93,155,255, 0.18);
+
+    --navbar-bg: rgba(23, 27, 35, 0.92);
+
+    /* Neutral color for background objects */
+    --bg-object-color: #6b7280; /* neutral grey */
+
+    /* GitHub Contributions Colors - Dark Theme */
+    --contribution-bg: #151b27;
+    --contribution-border: #34405a;
+    --contribution-hover-border: #5d9bff;
+    --contribution-level-0: #232940;
+    --contribution-level-1: #304272;
+    --contribution-level-2: #4c85d1;
+    --contribution-level-3: #5d9bff;
+    --contribution-level-4: #78c0ff;
+    --tooltip-bg: #243d5c;
+    --tooltip-text: #d1e2fa;
+    --tooltip-border: #34405a;
+}
+
+/* Clean Light Theme - Beige Background with Black/Grey Foreground */
+[data-theme="light"] {
+    --bg-primary: #faf9f5; /* lighter beige background */
+    --bg-secondary: #f7f5f0;
+    --section-bg: #fcfbf8;
+    --card-bg: rgba(255, 252, 247, 0.95);
+    --hover-bg: rgba(0, 0, 0, 0.04);
+    --input-bg: #fefcf9;
+
+    --text-primary: #1a1a1a; /* near black for primary text */
+    --text-secondary: #4a4a4a; /* medium grey for secondary text */
+
+    --accent-color: #2c2c2c; /* dark grey accent */
+    --accent-hover: #1a1a1a;
+    --accent-gradient-start: #2c2c2c;
+    --accent-gradient-end: #5a5a5a;
+    --secondary-accent: #6b6b6b;
+    --success-color: #4a7c59;
+
+    --border-color: rgba(0, 0, 0, 0.08);
+    --border-hover: rgba(0, 0, 0, 0.15);
+
+    --badge-bg: rgba(0, 0, 0, 0.06);
+    --badge-text: #2c2c2c;
+    --badge-border: rgba(0, 0, 0, 0.12);
+
+    --tech-bg: rgba(0, 0, 0, 0.04);
+    --tech-text: #3a3a3a;
+    --tech-border: rgba(0, 0, 0, 0.08);
+    
+    --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.08);
+    --shadow-large: 0 20px 64px rgba(0, 0, 0, 0.12);
+    --shadow-accent: rgba(0, 0, 0, 0.1);
+
+    --navbar-bg: rgba(250, 249, 245, 0.95);
+
+    /* Neutral color for background objects */
+    --bg-object-color: #9ca3af; /* neutral grey */
+
+    /* GitHub Contributions Colors - Light (Beige) Theme */
+    --contribution-bg: #fcfbf8;
+    --contribution-border: rgba(0, 0, 0, 0.1);
+    --contribution-hover-border: #2c2c2c;
+    --contribution-level-0: #f7f5f0;
+    --contribution-level-1: #e0d5c4;
+    --contribution-level-2: #c4b5a0;
+    --contribution-level-3: #8b7d6b;
+    --contribution-level-4: #5a5a5a;
+    --tooltip-bg: #ffffff;
+    --tooltip-text: #1a1a1a;
+    --tooltip-border: rgba(0, 0, 0, 0.15);
+}
+
+/* Theme-specific styles */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.navbar {
+    background: var(--navbar-bg);
+}
+
+/* Smooth theme transition */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Theme toggle animations */
+.theme-toggle {
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-icon {
+    transition: transform 0.3s ease;
+}
+
+[data-theme="light"] .theme-icon {
+    transform: rotate(180deg);
+}
+
+/* Interactive background colors for themes */
+.bg-line {
+    stroke: var(--accent-color);
+    opacity: 0.3;
+}
+
+.bg-particle {
+    fill: var(--accent-color);
+    opacity: 0.6;
+}
+
+/* Light theme specific adjustments */
+[data-theme="light"] .floating-card {
+    box-shadow: var(--shadow-medium);
+    background: rgba(255, 252, 247, 0.95);
+    backdrop-filter: blur(9px);
+}
+
+[data-theme="light"] .project-card,
+[data-theme="light"] .tech-stack,
+[data-theme="light"] .form {
+    background: rgba(255, 252, 247, 0.95);
+    backdrop-filter: blur(9px);
+    box-shadow: var(--shadow-medium);
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .floating-card {
+    background: rgba(60, 72, 98, 0.10);
+    border: 1px solid rgba(81, 164, 253, 0.12);
+}
+
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .tech-stack,
+[data-theme="dark"] .form {
+    background: rgba(60, 72, 98, 0.10);
+    border: 1px solid rgba(81, 164, 253, 0.12);
+}
