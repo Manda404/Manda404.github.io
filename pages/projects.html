@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Danial Amin</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/themes.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <!-- Interactive Background -->
+    <canvas id="interactive-bg"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">Danial Amin</a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="./projects.html" class="nav-link active">Projects</a>
+                <a href="./blog.html" class="nav-link">Blog</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <section class="projects-header">
+        <div class="container">
+            <div class="projects-hero">
+                <span class="section-badge">Portfolio</span>
+                <h1 class="section-title">Featured Projects</h1>
+                <p class="projects-description">
+                    A collection of enterprise AI solutions, agentic systems, and production deployments 
+                    showcasing real-world impact across fintech, healthcare, and design innovation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="agentic">Agentic AI</button>
+                <button class="filter-btn" data-filter="rag">RAG Systems</button>
+                <button class="filter-btn" data-filter="fintech">Fintech</button>
+                <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+                <button class="filter-btn" data-filter="mlops">MLOps</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-showcase">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Featured Project 1 - AIDC -->
+                <div class="project-card featured" data-category="agentic enterprise">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                    </svg>
+                                    <span>Case Study</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                                    </svg>
+                                    <span>Technical Docs</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-placeholder">
+                            <div class="placeholder-icon">🤖</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-type">Featured • Agentic AI</div>
+                            <div class="project-status">Production</div>
+                        </div>
+                        <h3 class="project-title">AIDC - AI Design Companion (Samsung)</h3>
+                        <p class="project-description">
+                            Multi-agent AI system for Samsung's wearable technology design optimization. Combines generative AI, 
+                            3D geometric processing, and predictive ML models for autonomous design assistance.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">92%</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3D</span>
+                                <span class="metric-label">Body Modeling</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Multi-Agent</span>
+                                <span class="metric-label">Architecture</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - AIRC -->
+                <div class="project-card" data-category="rag enterprise">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                    </svg>
+                                    <span>Demo</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                    </svg>
+                                    <span>Architecture</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-placeholder">
+                            <div class="placeholder-icon">🔍</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-type">RAG • Enterprise</div>
+                            <div class="project-status">Active</div>
+                        </div>
+                        <h3 class="project-title">AIRC - AI Research Companion</h3>
+                        <p class="project-description">
+                            Enterprise RAG system for Samsung Design Innovation Center with advanced retrieval strategies, 
+                            semantic chunking, and hybrid search for design documentation and research materials.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Hybrid</span>
+                                <span class="metric-label">Search</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Local</span>
+                                <span class="metric-label">LLMs</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">CI/CD</span>
+                                <span class="metric-label">MLOps</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">OLLAMA</span>
+                            <span class="tech-tag">LLAMA</span>
+                            <span class="tech-tag">MLflow</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 - KYC System -->
+                <div class="project-card" data-category="fintech enterprise">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>Compliance Report</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-placeholder">
+                            <div class="placeholder-icon">🛡️</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-type">Fintech • Compliance</div>
+                            <div class="project-status">Production</div>
+                        </div>
+                        <h3 class="project-title">KYC Automation & Compliance System</h3>
+                        <p class="project-description">
+                            AI-powered KYC verification system for regulated fintech startup with GDPR compliance framework, 
+                            document verification pipeline, and comprehensive audit trail capabilities.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">GDPR</span>
+                                <span class="metric-label">Compliant</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">CV+NLP</span>
+                                <span class="metric-label">Pipeline</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Full</span>
+                                <span class="metric-label">Audit Trail</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Azure OpenAI</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Azure IAM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 - Bob Startup Advisor -->
+                <div class="project-card" data-category="rag enterprise">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                    </svg>
+                                    <span>Live System</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                    </svg>
+                                    <span>Documentation</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-placeholder">
+                            <div class="placeholder-icon">💡</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-type">RAG • Startup Advisory</div>
+                            <div class="project-status">Production</div>
+                        </div>
+                        <h3 class="project-title">Bob - The Startup Advisor</h3>
+                        <p class="project-description">
+                            Enterprise RAG system for startup evaluation across multiple innovation hubs. Multi-stage retrieval 
+                            pipeline with query optimization and reranking, serving 500+ requests/hour.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">500+</span>
+                                <span class="metric-label">Requests/Hour</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Multi-Hub</span>
+                                <span class="metric-label">Coverage</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">24/7</span>
+                                <span class="metric-label">Available</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Pinecone</span>
+                            <span class="tech-tag">Azure OpenAI</span>
+                            <span class="tech-tag">LangServe</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 - AI Lending Platform -->
+                <div class="project-card" data-category="fintech mlops">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                                    </svg>
+                                    <span>Case Study</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-placeholder">
+                            <div class="placeholder-icon">🏦</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-type">Banking • ML</div>
+                            <div class="project-status">PoC Delivered</div>
+                        </div>
+                        <h3 class="project-title">AI-Powered Lending Platform (NCB Jamaica)</h3>
+                        <p class="project-description">
+                            Credit risk assessment platform for National Commercial Bank Jamaica with ML-based scoring models, 
+                            explainability features, and Caribbean banking regulations compliance.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Risk</span>
+                                <span class="metric-label">Assessment</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Explainable</span>
+                                <span class="metric-label">AI</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Regulated</span>
+                                <span class="metric-label">Compliant</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">GCP</span>
+                            <span class="tech-tag">BigQuery</span>
+                            <span class="tech-tag">Looker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 - Sandy Financial Advisor -->
+                <div class="project-card" data-category="agentic fintech">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>Security Report</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                                    </svg>
+                                    <span>Architecture</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-placeholder">
+                            <div class="placeholder-icon">💰</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-type">Agentic AI • Fintech</div>
+                            <div class="project-status">Production</div>
+                        </div>
+                        <h3 class="project-title">Sandy - The Financial Advisor</h3>
+                        <p class="project-description">
+                            Production-grade agentic AI system for automated financial analysis in regulated fintech environment. 
+                            Multi-agent architecture with specialized agents for secure data retrieval and compliance checks.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Multi-Agent</span>
+                                <span class="metric-label">System</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Secure</span>
+                                <span class="metric-label">Data Pipeline</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Financial</span>
+                                <span class="metric-label">Compliance</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">Pinecone</span>
+                            <span class="tech-tag">Azure IAM</span>
+                            <span class="tech-tag">Celery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 - SignalGuard Observability -->
+                <div class="project-card" data-category="mlops enterprise">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://danial-amin.github.io/signal-guard/demo.html" class="project-link" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                    </svg>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://danial-amin.github.io/signal-guard" class="project-link" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-placeholder">
+                            <div class="placeholder-icon">📡</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-type">AIOps • Observability</div>
+                            <div class="project-status">Open Source</div>
+                        </div>
+                        <h3 class="project-title">SignalGuard Observability Platform</h3>
+                        <p class="project-description">
+                            End-to-end observability demo with synthetic microservices, Prometheus metrics, anomaly detection service, 
+                            and Grafana dashboards. Features real-time monitoring and early-stage AIOps capabilities with live GitHub Pages demo.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Real-Time</span>
+                                <span class="metric-label">Monitoring</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">AIOps</span>
+                                <span class="metric-label">Anomaly Detection</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Docker</span>
+                                <span class="metric-label">Orchestrated</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">Grafana</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 - SignalGuard Logs -->
+                <div class="project-card" data-category="mlops">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/danial-amin/signalguard-aiops" class="project-link" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://danial-amin.github.io/signalguard-aiops/" class="project-link" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                                    </svg>
+                                    <span>Documentation</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image-placeholder">
+                            <div class="placeholder-icon">📜</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-type">AIOps • Log Intelligence</div>
+                            <div class="project-status">Open Source</div>
+                        </div>
+                        <h3 class="project-title">SignalGuard Logs - Log Intelligence Toolkit</h3>
+                        <p class="project-description">
+                            Modular AIOps toolkit for log analysis with template extraction, semantic anomaly detection, error burst detection, 
+                            and pattern drift detection. Features TF-IDF vectorization and Isolation Forest for intelligent log monitoring.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Template</span>
+                                <span class="metric-label">Extraction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Semantic</span>
+                                <span class="metric-label">Detection</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Pattern</span>
+                                <span class="metric-label">Discovery</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">TF-IDF</span>
+                            <span class="tech-tag">Isolation Forest</span>
+                            <span class="tech-tag">pandas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Danial Amin. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/interactive-bg.js"></script>
+    <script src="../js/theme-switcher.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/projects-filter.js"></script>
+</body>
+</html>
