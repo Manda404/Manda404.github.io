@@ -1,48 +1,1151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rostand Surel – AI & Data Scientist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danial Amin - AI & Data Scientist | Senior ML Consultant</title>
+<meta name="description" content="Senior AI and Machine Learning Solutions Architect with 8+ years of experience. Specializing in agentic AI systems, enterprise RAG solutions, and scalable ML deployments. Expert in LangChain, PyTorch, and production AI systems.">
+<meta name="keywords" content="AI consultant, machine learning expert, data scientist, agentic AI, RAG systems, ML architect, AI engineer, deep learning, computer vision, NLP, MLOps">
+<meta name="author" content="Danial Amin">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://danial-amin.github.io/">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/themes.css">
-    <link rel="stylesheet" href="css/animations.css">
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danial-amin.github.io/">
+<meta property="og:title" content="Danial Amin - AI & Data Scientist | Senior ML Consultant">
+<meta property="og:description" content="Senior AI and Machine Learning Solutions Architect with 8+ years of experience. Specializing in agentic AI systems, enterprise RAG solutions, and scalable ML deployments.">
+<meta property="og:image" content="https://danial-amin.github.io/assets/images/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://danial-amin.github.io/">
+<meta property="twitter:title" content="Danial Amin - AI & Data Scientist | Senior ML Consultant">
+<meta property="twitter:description" content="Senior AI and Machine Learning Solutions Architect with 8+ years of experience. Specializing in agentic AI systems, enterprise RAG solutions, and scalable ML deployments.">
+<meta property="twitter:image" content="https://danial-amin.github.io/assets/images/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet" href="css/style.css?v=1.0">
+<link rel="stylesheet" href="css/themes.css?v=1.0">
+<link rel="stylesheet" href="css/animations.css?v=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Force cache clearing -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Danial Amin",
+  "jobTitle": "Senior AI and Machine Learning Solutions Architect",
+  "description": "Senior AI/ML Consultant with 8+ years of experience transforming complex data into intelligent solutions",
+  "url": "https://danial-amin.github.io/",
+  "sameAs": [
+    "https://linkedin.com/in/danialamin",
+    "https://github.com/danial-amin"
+  ],
+  "email": "writetodanialamin@gmail.com",
+  "knowsAbout": [
+    "Machine Learning",
+    "Deep Learning",
+    "Agentic AI",
+    "RAG Systems",
+    "Computer Vision",
+    "Natural Language Processing",
+    "MLOps",
+    "Data Science"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Professional Certification",
+      "recognizedBy": {
+        "@type": "Organization"
+      }
+    }
+  ]
+}
+</script>
 </head>
-
 <body>
+<!-- Interactive Background -->
+<canvas id="interactive-bg"></canvas>
 
-    <!-- Background -->
-    <canvas id="interactive-bg"></canvas>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <a href="index.html">Danial Amin</a>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
 
-    <!-- Navbar -->
-    <div id="navbar"></div>
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open for collaboration
+            </div>
+            <h1 class="hero-title">
+                I am an expert in
+                <span class="changing-word" style="white-space: nowrap;" data-words="Data Science,Machine Learning,Deep Learning,Agentic AI,Computer Vision,Generative AI">Data Science</span>
+            </h1>
+            <p class="hero-description">
+                As a Senior AI and Machine Learning Solutions Architect with over eight years of experience, I have successfully transformed complex data into intelligent solutions. 
+                My career spans startups, scaleups, and enterprise companies, where I have primarily served as a technical consultant. 
+                My roles have included AI Engineer, AI Architect, and AI R&D Consultant. 
+                I have gained valuable experience across diverse industries, including finance, engineering, manufacturing, innovation, and telecom.
+                <div class="hero-actions">
+                <a href="pages/projects.html" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Enterprise Clients</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2.5x</span>
+                    <span class="stat-label">Efficiency Gain</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-network">
+                <!-- Center Node -->
+                <div class="network-center">
+                    <div class="center-node">
+                        <div class="center-icon">🤖</div>
+                    </div>
+                </div>
+                
+                <!-- Network Nodes -->
+                <div class="network-node node-1" data-skill="Agentic AI">
+                    <div class="node-content">
+                        <div class="node-icon">🧠</div>
+                        <div class="node-label">AI</div>
+                    </div>
+                </div>
+                
+                <div class="network-node node-2" data-skill="RAG Systems">
+                    <div class="node-content">
+                        <div class="node-icon">🔬</div>
+                        <div class="node-label">RAG</div>
+                    </div>
+                </div>
+                
+                <div class="network-node node-3" data-skill="Computer Vision">
+                    <div class="node-content">
+                        <div class="node-icon">👁️</div>
+                        <div class="node-label">CV</div>
+                    </div>
+                </div>
+                
+                <div class="network-node node-4" data-skill="Natural Language Processing">
+                    <div class="node-content">
+                        <div class="node-icon">🌐</div>
+                        <div class="node-label">NLP</div>
+                    </div>
+                </div>
+                
+                <div class="network-node node-5" data-skill="Data Engineering">
+                    <div class="node-content">
+                        <div class="node-icon">📊</div>
+                        <div class="node-label">Data</div>
+                    </div>
+                </div>
+                
+                <div class="network-node node-6" data-skill="MLOps">
+                    <div class="node-content">
+                        <div class="node-icon">⚙️</div>
+                        <div class="node-label">MLOps</div>
+                    </div>
+                </div>
 
-    <!-- Main content -->
-    <main>
-        <div id="hero"></div>
-        <div id="about"></div>
-        <div id="skills"></div>
-        <div id="github"></div>
-        <div id="education"></div>
-        <div id="experience"></div>
-        <div id="projects"></div>
-        <div id="blog"></div>
-        <div id="testimonials"></div>
-        <div id="contact"></div>
-    </main>
+                <!-- Connection Lines -->
+                <svg class="connection-lines" viewBox="0 0 500 500">
+                    <line class="connection connection-1" x1="250" y1="250" x2="350" y2="100"/>
+                    <line class="connection connection-2" x1="250" y1="250" x2="470" y2="160"/>
+                    <line class="connection connection-3" x1="250" y1="250" x2="390" y2="370"/>
+                    <line class="connection connection-4" x1="250" y1="250" x2="240" y2="410"/>
+                    <line class="connection connection-5" x1="250" y1="250" x2="170" y2="320"/>
+                    <line class="connection connection-6" x1="250" y1="250" x2="170" y2="130"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <div id="footer"></div>
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">About Me</span>
+            <h2 class="section-title">Passionate about solving complex problems with data</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-content">
+                <p class="about-text">
+                    Senior AI/ML Consultant with 8+ years of experience transforming complex data into intelligent solutions. 
+                    I specialize in agentic AI systems, enterprise RAG solutions, and scalable ML deployments for Fortune 500 companies and innovative startups.
+                </p>
+                
+                <!-- Download CV Button -->
+                <div class="cv-download">
+                    <a href="/assets/cv/Danial_Amin_CV.pdf" download="Danial_Amin_CV.pdf" class="btn btn-primary cv-btn" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        <span>Download CV</span>
+                    </a>
+                </div>
 
-    <!-- JS global -->
-    <script src="js/global/interactive-bg.js"></script>
-    <script src="js/global/theme-switcher.js"></script>
+                <!-- Core Skills -->
+                <div class="core-skills">
+                    <h3>Core Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🤖</div>
+                            <span>Agentic AI Systems</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔍</div>
+                            <span>Enterprise RAG</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🏗️</div>
+                            <span>Solution Architecture</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🚀</div>
+                            <span>MLOps & Deployment</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🛡️</div>
+                            <span>Compliance & Security</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💼</div>
+                            <span>Consulting & Leadership</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">👁️</div>
+                            <span>Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-content">
+                            <span class="stat-value">2000+</span>
+                            <span class="stat-label">Lifetime Github Contributions</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-content">
+                            <span class="stat-value">1200GB+</span>
+                            <span class="stat-label">Data Processed</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-content">
+                            <span class="stat-value">50K+</span>
+                            <span class="stat-label">Lines of Code Written</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-content">
+                            <span class="stat-value">5M+</span>
+                            <span class="stat-label">Daily Events Analyzed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Loader (OBLIGATOIRE) -->
-    <script src="js/loader.js"></script>
+<!-- Skills & Competencies Section -->
+<section class="skills-competencies" id="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Technical Skills</span>
+            <h2 class="section-title">Skills & Competencies</h2>
+        </div>
+        <div class="tech-stack-expanded">
+            <div class="tech-category">
+                <h4>AI/ML Frameworks</h4>
+                <div class="tech-items">
+                    <span class="tech-item">
+                        <span class="tech-logo-emoji">🦜🔗</span>
+                        LangChain
+                    </span>
+                    <span class="tech-item">
+                        <span class="tech-logo-emoji">🦜🔗</span>
+                        LangGraph
+                    </span>
+                    <span class="tech-item">
+                        <span class="tech-logo-emoji">🦜🔗</span>
+                        LangServe
+                    </span>
+                    <span class="tech-item">
+                        <i class="fab fa-python tech-icon"></i>
+                        PyTorch
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-brain tech-icon"></i>
+                        TensorFlow
+                    </span>
+                    <span class="tech-item">
+                        <i class="fab fa-python tech-icon"></i>
+                        Scikit-learn
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-chart-line tech-icon"></i>
+                        XGBoost
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-robot tech-icon"></i>
+                        AutoGen
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-users tech-icon"></i>
+                        CrewAI
+                    </span>
+                </div>
+            </div>
+            
+            <div class="tech-category">
+                <h4>Vector Databases & Search</h4>
+                <div class="tech-items">
+                    <span class="tech-item">
+                        <span class="tech-logo-emoji">🌲</span>
+                        Pinecone
+                    </span>
+                    <span class="tech-item">
+                        <span class="tech-logo-emoji">🕸️</span>
+                        Weaviate
+                    </span>
+                    <span class="tech-item">
+                        <span class="tech-logo-emoji">🎨</span>
+                        ChromaDB
+                    </span>
+                    <span class="tech-item">
+                        <i class="fab fa-facebook tech-icon"></i>
+                        FAISS
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-search tech-icon"></i>
+                        Elasticsearch
+                    </span>
+                </div>
+            </div>
+            
+            <div class="tech-category">
+                <h4>Cloud Platforms</h4>
+                <div class="tech-items">
+                    <span class="tech-item">
+                        <i class="fab fa-microsoft tech-icon"></i>
+                        Microsoft Azure
+                    </span>
+                    <span class="tech-item">
+                        <i class="fab fa-google tech-icon"></i>
+                        Google Cloud Platform
+                    </span>
+                    <span class="tech-item">
+                        <i class="fab fa-aws tech-icon"></i>
+                        Amazon Web Services
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-brain tech-icon"></i>
+                        Azure ML
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-robot tech-icon"></i>
+                        Vertex AI
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-cogs tech-icon"></i>
+                        SageMaker
+                    </span>
+                </div>
+            </div>
+            
+            <div class="tech-category">
+                <h4>Programming Languages</h4>
+                <div class="tech-items">
+                    <span class="tech-item">
+                        <i class="fab fa-python tech-icon"></i>
+                        Python
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-database tech-icon"></i>
+                        SQL
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-fire tech-icon"></i>
+                        PySpark
+                    </span>
+                    <span class="tech-item">
+                        <i class="fab fa-r-project tech-icon"></i>
+                        R
+                    </span>
+                    <span class="tech-item">
+                        <i class="fab fa-js-square tech-icon"></i>
+                        JavaScript
+                    </span>
+                    <span class="tech-item">
+                        <i class="fab fa-js-square tech-icon"></i>
+                        TypeScript
+                    </span>
+                </div>
+            </div>
+            
+            <div class="tech-category">
+                <h4>DevOps & MLOps</h4>
+                <div class="tech-items">
+                    <span class="tech-item">
+                        <i class="fab fa-docker tech-icon"></i>
+                        Docker
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-cube tech-icon"></i>
+                        Kubernetes
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-chart-line tech-icon"></i>
+                        MLflow
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-code-branch tech-icon"></i>
+                        DVC
+                    </span>
+                    <span class="tech-item">
+                        <i class="fab fa-github tech-icon"></i>
+                        GitHub Actions
+                    </span>
+                    <span class="tech-item">
+                        <i class="fab fa-microsoft tech-icon"></i>
+                        Azure DevOps
+                    </span>
+                </div>
+            </div>
+            
+            <div class="tech-category">
+                <h4>APIs & Backend</h4>
+                <div class="tech-items">
+                    <span class="tech-item">
+                        <i class="fas fa-bolt tech-icon"></i>
+                        FastAPI
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-flask tech-icon"></i>
+                        Flask
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-plug tech-icon"></i>
+                        REST APIs
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-project-diagram tech-icon"></i>
+                        GraphQL
+                    </span>
+                    <span class="tech-item">
+                        <i class="fas fa-satellite-dish tech-icon"></i>
+                        WebSockets
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- GitHub Contributions Section -->
+<section class="github-contributions" id="github">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">GitHub Activity</span>
+            <h2 class="section-title">My Coding Journey</h2>
+        </div>
+        <div class="contributions-container">
+            <div class="contribution-header">
+                <h3 id="contribution-year">2025 Contributions</h3>
+                <div class="contribution-stats">
+                    <span class="total-contributions">Loading...</span>
+                    <span class="longest-streak">Loading...</span>
+                </div>
+            </div>
+            <div class="contribution-grid" id="contribution-grid">
+                <!-- GitHub contributions will be loaded here -->
+            </div>
+            
+            <div class="slideshow-controls">
+                <button class="slide-btn prev-btn" id="prev-slide">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="slide-indicators">
+                    <span class="indicator active" data-year="2025"></span>
+                    <span class="indicator" data-year="2024"></span>
+                    <span class="indicator" data-year="2023"></span>
+                    <span class="indicator" data-year="2022"></span>
+                    <span class="indicator" data-year="2021"></span>
+                    <span class="indicator" data-year="2020"></span>
+                </div>
+                <button class="slide-btn next-btn" id="next-slide">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education & Certifications Section -->
+<section class="education-certifications" id="education">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Qualifications</span>
+            <h2 class="section-title">Education & Certifications</h2>
+        </div>
+        <div class="edu-cert-grid">
+            <div class="education-section">
+                <h3>Education</h3>
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-content">
+                            <h4>MBA - Business Administration</h4>
+                            <p>Rennes School of Business, France</p>
+                            <span class="edu-year">2023-2024</span>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-content">
+                            <h4>Micro Masters - Statistics & Data Science</h4>
+                            <p>Massachusetts Institute of Technology</p>
+                            <span class="edu-year">2019-2023</span>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-content">
+                            <h4>Data Science & ML Diploma</h4>
+                            <p>MIT Institute for Data, Systems and Society</p>
+                            <span class="edu-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-content">
+                            <h4>Micro Masters - Data Science</h4>
+                            <p>UC San Diego</p>
+                            <span class="edu-year">2021-2023</span>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-content">
+                            <h4>Micro Masters - Business Analytics</h4>
+                            <p>University of Wisconsin</p>
+                            <span class="edu-year">2021-2022</span>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-content">
+                            <h4>B.S. Aerospace Engineering</h4>
+                            <p>Institute of Space Technology, Pakistan</p>
+                            <span class="edu-year">2013-2017</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certifications-section">
+                <h3>Key Certifications</h3>
+                <div class="certifications-grid">
+                    <div class="cert-item">
+                        <div class="cert-badge">MCP</div>
+                        <span>Model Context Protocol (Anthropic)</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">AWS</div>
+                        <span>Certified AI Practitioner (AWS)</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">AI</div>
+                        <span>Expert AI Certification (EITCA)</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">PM</div>
+                        <span>SAFe Product Owner/Manager</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">GCP</div>
+                        <span>Google Cloud Professional</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">DS</div>
+                        <span>IBM Data Science Professional</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">DL</div>
+                        <span>Deep Learning Specialization</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">NLP</div>
+                        <span>NLP Specialization</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">AZ</div>
+                        <span>Azure ML Fundamentals</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">PY</div>
+                        <span>AI Programming with Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section class="experience" id="experience">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Experience</span>
+            <h2 class="section-title">Professional Journey</h2>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-track">
+                <div class="timeline-line"></div>
+                <div class="timeline-items">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date">Nov 2024 – Present</div>
+                            <h3 class="timeline-role">AI R&D Consultant</h3>
+                            <div class="timeline-company">Samsung Design Innovation Center</div>
+                            <ul class="timeline-description">
+                                <li>Led AIDC multi-agent AI system combining generative AI, 3D geometric processing, and predictive ML models</li>
+                                <li>Architected hybrid data infrastructure with FAISS vector databases and PostgreSQL for 3D mesh processing</li>
+                                <li>Built production APIs using FastAPI and LangServe achieving 92% accuracy in size prediction models</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date">Sep 2023 – Nov 2024</div>
+                            <h3 class="timeline-role">AI & Data Science Lead</h3>
+                            <div class="timeline-company">i13 Ventures Studio</div>
+                            <ul class="timeline-description">
+                                <li>Provided AI/ML consulting to 6+ startup clients delivering enterprise RAG solutions with 60% latency reduction</li>
+                                <li>Built scalable API infrastructure serving 500+ requests/hour with load balancing and authentication</li>
+                                <li>Established MLOps infrastructure reducing model deployment cycles from weeks to hours</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date">Feb 2023 – Sep 2023</div>
+                            <h3 class="timeline-role">Head of Data Analytics</h3>
+                            <div class="timeline-company">Abacus Global</div>
+                            <ul class="timeline-description">
+                                <li>Led consulting practice for enterprise clients including MTN Africa and NCB Jamaica</li>
+                                <li>Designed big data infrastructure on GCP handling 5M+ daily events with real-time processing</li>
+                                <li>Built RESTful APIs for predictive model deployment with monitoring dashboards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date">Feb 2022 – Feb 2023</div>
+                            <h3 class="timeline-role">Technical Consultant</h3>
+                            <div class="timeline-company">Automat Solutions Inc</div>
+                            <ul class="timeline-description">
+                                <li>Delivered smart battery optimization using deep reinforcement learning with GPU-accelerated training</li>
+                                <li>Built automated data pipelines with real-time anomaly detection and TensorRT optimization</li>
+                                <li>Developed Flask-based REST APIs achieving 99.9% uptime with request queuing and caching</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date">Feb 2021 – Feb 2022</div>
+                            <h3 class="timeline-role">ML Consultant</h3>
+                            <div class="timeline-company">Omdena Inc</div>
+                            <ul class="timeline-description">
+                                <li>Delivered computer vision solutions for NGOs achieving 12% accuracy improvement over baseline</li>
+                                <li>Built automated ML pipelines using Docker with version control and CI practices</li>
+                                <li>Coordinated distributed team of 15-20 volunteer data scientists and mentored junior developers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date">Aug 2017 – Nov 2022</div>
+                            <h3 class="timeline-role">Assistant Manager - Aerospace Analytics</h3>
+                            <div class="timeline-company">Government of Pakistan</div>
+                            <ul class="timeline-description">
+                                <li>Delivered predictive maintenance ML system for 50+ aircraft fleet reducing costs by 35%</li>
+                                <li>Developed fuel consumption optimization models with automated retraining schedules</li>
+                                <li>Established data governance framework and trained maintenance personnel on analytics dashboards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate items for seamless scrolling -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date">Nov 2024 – Present</div>
+                            <h3 class="timeline-role">AI R&D Consultant</h3>
+                            <div class="timeline-company">Samsung Design Innovation Center</div>
+                            <ul class="timeline-description">
+                                <li>Led AIDC multi-agent AI system combining generative AI, 3D geometric processing, and predictive ML models</li>
+                                <li>Architected hybrid data infrastructure with FAISS vector databases and PostgreSQL for 3D mesh processing</li>
+                                <li>Built production APIs using FastAPI and LangServe achieving 92% accuracy in size prediction models</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date">Sep 2023 – Nov 2024</div>
+                            <h3 class="timeline-role">AI & Data Science Lead</h3>
+                            <div class="timeline-company">i13 Ventures Studio</div>
+                            <ul class="timeline-description">
+                                <li>Provided AI/ML consulting to 6+ startup clients delivering enterprise RAG solutions with 60% latency reduction</li>
+                                <li>Built scalable API infrastructure serving 500+ requests/hour with load balancing and authentication</li>
+                                <li>Established MLOps infrastructure reducing model deployment cycles from weeks to hours</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date">Feb 2023 – Sep 2023</div>
+                            <h3 class="timeline-role">Head of Data Analytics</h3>
+                            <div class="timeline-company">Abacus Global</div>
+                            <ul class="timeline-description">
+                                <li>Led consulting practice for enterprise clients including MTN Africa and NCB Jamaica</li>
+                                <li>Designed big data infrastructure on GCP handling 5M+ daily events with real-time processing</li>
+                                <li>Built RESTful APIs for predictive model deployment with monitoring dashboards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects -->
+<section class="featured-projects" id="projects">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Featured Work</span>
+            <h2 class="section-title">Projects that make an impact</h2>
+            <a href="pages/projects.html" class="view-all-link">
+                View All Projects
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+            </a>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card featured">
+                <div class="project-header">
+                    <div class="project-type">Featured Project</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">AIDC - AI Design Companion</h3>
+                <p class="project-description">
+                    Multi-agent AI system for Samsung's wearable technology design optimization, combining generative AI with 
+                    3D geometric processing to achieve 92% accuracy in size prediction models.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">LangChain</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">FAISS</span>
+                    <span class="tech-tag">FastAPI</span>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Fintech</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">KYC Automation & Compliance</h3>
+                <p class="project-description">
+                    AI-powered KYC verification system for regulated fintech startup with GDPR compliance framework and 
+                    comprehensive audit trail capabilities.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">Azure OpenAI</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Banking</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">AI-Powered Lending Platform</h3>
+                <p class="project-description">
+                    Credit risk assessment platform for NCB Jamaica with ML-based scoring models and explainability features 
+                    meeting Caribbean banking regulations.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Scikit-learn</span>
+                    <span class="tech-tag">GCP</span>
+                    <span class="tech-tag">BigQuery</span>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">AIOps • Observability</div>
+                    <div class="project-links">
+                        <a href="https://danial-amin.github.io/signal-guard/demo.html" class="project-link" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
+                        <a href="https://danial-amin.github.io/signal-guard" class="project-link" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">SignalGuard Observability Platform</h3>
+                <p class="project-description">
+                    End-to-end observability demo with synthetic microservices, Prometheus metrics, anomaly detection service, 
+                    and Grafana dashboards. Features real-time monitoring and early-stage AIOps capabilities with live GitHub Pages demo.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Prometheus</span>
+                    <span class="tech-tag">Grafana</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Docker</span>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">AIOps • Log Intelligence</div>
+                    <div class="project-links">
+                        <a href="https://github.com/danial-amin/signalguard-aiops" class="project-link" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                            </svg>
+                        </a>
+                        <a href="https://danial-amin.github.io/signalguard-aiops/" class="project-link" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">SignalGuard Logs - Log Intelligence Toolkit</h3>
+                <p class="project-description">
+                    Modular AIOps toolkit for log analysis with template extraction, semantic anomaly detection, error burst detection, 
+                    and pattern drift detection. Features TF-IDF vectorization and Isolation Forest for intelligent log monitoring.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">scikit-learn</span>
+                    <span class="tech-tag">TF-IDF</span>
+                    <span class="tech-tag">Isolation Forest</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Blog Posts -->
+<section class="latest-blog" id="blog">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Insights</span>
+            <h2 class="section-title">Latest from the Blog</h2>
+            <a href="pages/blog.html" class="view-all-link">
+                View All Articles
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+            </a>
+        </div>
+        <div class="blog-preview-grid">
+                <!-- Blog Card - Latest Article -->
+                <a href="pages/articles/2025-12-12-llm-bubble.html" class="blog-card-link">
+                    <article class="blog-preview-card" data-category="ai-research">
+                        <div class="blog-preview-meta">
+                            <span class="blog-date">December 12, 2025</span>
+                            <span class="blog-category">Featured • Analysis</span>
+                        </div>
+                        <h3 class="blog-preview-title">Beyond the LLM Bubble: Why We're Conflating GenAI with Transformers</h3>
+                        <p class="blog-preview-excerpt">
+                            The industry wrongly equates GenAI with LLMs. We explore why this conflation matters and why current transformer scaling faces fundamental sustainability limits.
+                        </p>
+                        <div class="blog-preview-tags">
+                            <span class="tag">GenAI LLM bubble transformers AI architectures sustainability GANs diffusion models VAEs</span>
+                        </div>
+                        <div class="read-more-link">
+                            Read Article
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Blog Card -->
+                <a href="pages/articles/2025-12-07-llm-wrapped-2025.html" class="blog-card-link">
+                    <article class="blog-preview-card" data-category="ai-research">
+                        <div class="blog-preview-meta">
+                            <span class="blog-date">December 7, 2025</span>
+                            <span class="blog-category">AI Research</span>
+                        </div>
+                        <h3 class="blog-preview-title">LLM Wrapped 2025</h3>
+                        <p class="blog-preview-excerpt">
+                            A data-driven look at language model development and deployment across 2025.
+                        </p>
+                        <div class="blog-preview-tags">
+                            <span class="tag"></span>
+                        </div>
+                        <div class="read-more-link">
+                            Read Article
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Blog Card -->
+                <a href="pages/articles/2025-12-01-why-hci.html" class="blog-card-link">
+                    <article class="blog-preview-card" data-category="opinion">
+                        <div class="blog-preview-meta">
+                            <span class="blog-date">December 1, 2025</span>
+                            <span class="blog-category">Opinion</span>
+                        </div>
+                        <h3 class="blog-preview-title">Why Human-AI Interaction Will Always Need Humans</h3>
+                        <p class="blog-preview-excerpt">
+                            From aerospace engineering to AI research—why the shift toward fully agentic systems makes human-computer interaction more essential, not less.
+                        </p>
+                        <div class="blog-preview-tags">
+                            <span class="tag">HCI human-AI-interaction agentic-AI research career</span>
+                        </div>
+                        <div class="read-more-link">
+                            Read Article
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </div>
+                    </article>
+                </a>
+        </div></section>
+
+<!-- Testimonials Section (moved below blog) -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">What Colleagues Say</span>
+            <h2 class="section-title">Testimonials</h2>
+        </div>
+    </div>
+    <div class="testimonials-viewport">
+        <div class="testimonials-track"></div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's build something amazing together</h2>
+                <p class="contact-description">
+                    I'm always interested in discussing new opportunities, innovative AI projects, 
+                    or potential collaborations in enterprise AI and data science consulting.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <a href="mailto:writetodanialamin@gmail.com" class="contact-value">writetodanialamin@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <div class="contact-label">LinkedIn</div>
+                            <a href="https://linkedin.com/in/danialamin" class="contact-value">linkedin.com/in/danialamin</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💻</div>
+                        <div>
+                            <div class="contact-label">GitHub</div>
+                            <a href="https://github.com/danial-amin" class="contact-value">github.com/danial-amin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; Made with ❤️ by Danial Amin and AI Assistant 🤖 (V1.0). Hopefully you like it! 😊</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/interactive-bg.js"></script>
+<script src="js/theme-switcher.js"></script>
+<script src="js/hero-animations.js"></script>
+<script src="js/timeline-debug.js"></script>
+<script src="js/github-contributions.js"></script>
+<script src="js/testimonials.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
