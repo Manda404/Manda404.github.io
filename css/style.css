@@ -592,6 +592,70 @@ section { padding: 110px 0; }
 .badge-label { font-size: 0.68rem; color: var(--text-tertiary); font-weight: 400; }
 .badge-value { color: var(--text-primary); font-weight: 700; font-size: 0.82rem; }
 
+/* ── 8b. RECRUITER SNAPSHOT ── */
+.recruiter-strip {
+    padding: 28px 0;
+    background:
+        linear-gradient(90deg, rgba(139,92,246,0.08), rgba(34,211,238,0.06)),
+        var(--bg-primary);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.snapshot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.snapshot-item {
+    min-height: 150px;
+    padding: 1.35rem;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    position: relative;
+    overflow: hidden;
+}
+
+.snapshot-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--gradient-primary);
+    opacity: 0.65;
+}
+
+.snapshot-kicker {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: var(--accent-2);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.snapshot-item strong {
+    display: block;
+    color: var(--text-primary);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.25;
+    margin-bottom: 0.55rem;
+}
+
+.snapshot-item p {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
 /* ── 9. ABOUT ── */
 .about {
     background: var(--bg-secondary);
@@ -1649,6 +1713,7 @@ section { padding: 110px 0; }
     .hero-aurora    { display: none; }
 
     .about-grid     { grid-template-columns: 1fr; }
+    .snapshot-grid  { grid-template-columns: 1fr; }
     .stats-grid     { grid-template-columns: 1fr 1fr; }
     .what-grid      { grid-template-columns: 1fr; }
 

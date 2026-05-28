@@ -221,13 +221,13 @@
                 e.preventDefault();
                 const name    = form.querySelector('[name="name"]')?.value || '';
                 const email   = form.querySelector('[name="email"]')?.value || '';
-                const subject = form.querySelector('[name="subject"]')?.value || 'Message from portfolio';
+                const subject = form.querySelector('[name="subject"]')?.value || 'Message depuis le portfolio';
                 const message = form.querySelector('[name="message"]')?.value || '';
                 const body    = `Bonjour Rostand,\n\n${message}\n\n---\n${name}\n${email}`;
                 window.location.href = `mailto:rostandsurel@yahoo.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
                 const btn  = form.querySelector('.form-submit');
                 const orig = btn.innerHTML;
-                btn.innerHTML = '✓ Opened in your email client';
+                btn.innerHTML = '✓ Ouvert dans votre client email';
                 btn.disabled  = true;
                 setTimeout(() => { btn.innerHTML = orig; btn.disabled = false; }, 4000);
             });
