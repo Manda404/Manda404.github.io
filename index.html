@@ -1,506 +1,460 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rostand Surel - Machine Learning Engineer | Data, MLOps & Generative AI</title>
+    <title>Rostand Surel — ML Engineer · Data Scientist · MLOps</title>
+    <meta name="description" content="Rostand Surel — Machine Learning Engineer with 4 years of experience building production-ready ML systems across insurance, aerospace, media and energy. Databricks certified. Open to CDI opportunities.">
+    <meta name="keywords" content="Rostand Surel, ML Engineer, Data Scientist, MLOps, Databricks, PySpark, XGBoost, LangChain, RAG, GenAI, Versailles, France">
+    <meta name="author" content="Rostand Surel">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://manda404.github.io/">
 
-<meta name="description" content="Machine Learning Engineer with 4 years of experience turning complex data into scalable ML systems across insurance, aerospace, media and energy. Strong in Data Science, Data Engineering, MLOps and expanding into Generative AI.">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manda404.github.io/">
+    <meta property="og:title" content="Rostand Surel — ML Engineer · Data Scientist">
+    <meta property="og:description" content="Machine Learning Engineer building scalable ML systems, data pipelines and AI-powered tools.">
 
-<meta name="keywords" content="Rostand Surel, machine learning engineer, data scientist, MLOps engineer, data engineering, predictive modeling, churn prediction, recommendation systems, Databricks, PySpark, MLflow, XGBoost, CatBoost, LightGBM, Scikit-learn, FastAPI, Generative AI, RAG, LangChain, LangGraph, AI agents, FAISS, Pinecone">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rostand Surel — ML Engineer">
+    <meta name="twitter:description" content="ML Engineer · MLOps · Generative AI — 4 years experience, Databricks certified.">
 
-<meta name="author" content="Rostand Surel">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://manda404.github.io/">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://manda404.github.io/">
-<meta property="og:title" content="Rostand Surel - Machine Learning Engineer | Data, MLOps & Generative AI">
-<meta property="og:description" content="Machine Learning Engineer building scalable ML systems, data products and AI-powered tools across insurance, aerospace, media and energy.">
-<meta property="og:image" content="https://manda404.github.io/assets/images/og-image.jpg">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://manda404.github.io/">
-<meta property="twitter:title" content="Rostand Surel - Machine Learning Engineer | Data, MLOps & Generative AI">
-<meta property="twitter:description" content="Machine Learning Engineer focused on Databricks, scalable ML pipelines, predictive modeling, MLOps and practical Generative AI applications.">
-<meta property="twitter:image" content="https://manda404.github.io/assets/images/og-image.jpg">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
 
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-
-<link rel="stylesheet" href="css/style.css?v=1.0">
-<link rel="stylesheet" href="css/themes.css?v=1.0">
-<link rel="stylesheet" href="css/animations.css?v=1.0">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- Force cache clearing -->
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-
-<!-- Structured Data (JSON-LD) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Rostand Surel",
-  "jobTitle": "Machine Learning Engineer",
-  "description": "Machine Learning Engineer with 4 years of experience turning complex data into scalable ML systems, data products and AI-powered tools across insurance, aerospace, media and energy.",
-  "url": "https://manda404.github.io/",
-  "sameAs": [
-    "https://www.linkedin.com/in/rostand-surel/",
-    "https://github.com/Manda404"
-  ],
-  "email": "rostandsurel@yahoo.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Versailles",
-    "addressCountry": "France"
-  },
-  "alumniOf": [
+    <!-- Structured Data -->
+    <script type="application/ld+json">
     {
-      "@type": "CollegeOrUniversity",
-      "name": "ECE, Lyon"
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "Politecnico di Torino"
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rostand Surel",
+        "jobTitle": "Machine Learning Engineer",
+        "url": "https://manda404.github.io/",
+        "sameAs": [
+            "https://www.linkedin.com/in/rostand-surel/",
+            "https://github.com/Manda404"
+        ],
+        "email": "rostandsurel@yahoo.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Versailles", "addressCountry": "FR" }
     }
-  ],
-  "knowsAbout": [
-    "Machine Learning Engineering",
-    "Data Science",
-    "Data Engineering",
-    "MLOps",
-    "Predictive Modeling",
-    "Churn Prediction",
-    "Recommendation Systems",
-    "Feature Engineering",
-    "Model Evaluation",
-    "XGBoost",
-    "CatBoost",
-    "LightGBM",
-    "Scikit-learn",
-    "PySpark",
-    "Databricks",
-    "MLflow",
-    "Docker",
-    "FastAPI",
-    "CI/CD",
-    "Generative AI",
-    "RAG Systems",
-    "LangChain",
-    "LangGraph",
-    "Embeddings",
-    "FAISS",
-    "Pinecone"
-  ],
-  "hasCredential": [
-    {
-      "@type": "EducationalOccupationalCredential",
-      "name": "Databricks Certified Machine Learning Associate",
-      "credentialCategory": "Professional Certification",
-      "recognizedBy": {
-        "@type": "Organization",
-        "name": "Databricks"
-      }
-    },
-    {
-      "@type": "EducationalOccupationalCredential",
-      "name": "Databricks Certified Generative AI Engineer Associate",
-      "credentialCategory": "Professional Certification",
-      "recognizedBy": {
-        "@type": "Organization",
-        "name": "Databricks"
-      }
-    }
-  ]
-}
-</script>
+    </script>
 </head>
-<body>
-<!-- Interactive Background -->
-<canvas id="interactive-bg"></canvas>
 
-<!-- Navigation -->
-<nav class="navbar">
+<body>
+<!-- Grid background -->
+<div class="page-bg" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-        <div class="nav-brand">
-            <a href="index.html">Rostand Surel</a>
-        </div>
-        <div class="nav-menu">
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
+        <a href="#home" class="nav-brand">
+            Rostand<span>.</span>
+        </a>
+
+        <div class="nav-links" id="nav-links">
+            <a href="#home"       class="nav-link active">Home</a>
+            <a href="#about"      class="nav-link">About</a>
+            <a href="#skills"     class="nav-link">Skills</a>
             <a href="#experience" class="nav-link">Experience</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#contact" class="nav-link">Contact</a>
-            <button class="theme-toggle" id="theme-toggle">
-                <span class="theme-icon">🌙</span>
-            </button>
+            <a href="#projects"   class="nav-link">Projects</a>
+            <a href="#contact"    class="nav-link">Contact</a>
         </div>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+
+        <div class="nav-actions">
+            <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">🌙</button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#home"       class="nav-link">Home</a>
+    <a href="#about"      class="nav-link">About</a>
+    <a href="#skills"     class="nav-link">Skills</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#projects"   class="nav-link">Projects</a>
+    <a href="#contact"    class="nav-link">Contact</a>
+    <a href="assets/cv/Rostand_Surel.pdf" class="btn btn-primary" download style="margin-top:.5rem;width:100%;justify-content:center;">
+        <i class="fas fa-download"></i> Download CV
+    </a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
 <section class="hero" id="home">
-    <div class="hero-container">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Machine Learning • MLOps • Generative AI
-            </div>
-
-            <h1 class="hero-title">
-                I bridge
-                <span class="changing-word" style="white-space: nowrap;" data-words="Data Engineering,Machine Learning,MLOps,Generative AI,Agentic Workflows">
-                    Data Engineering
-                </span>
-                and business impact
-            </h1>
-
-            <p class="hero-description">
-                Machine Learning Engineer with 4 years of experience turning operational data into
-                models, pipelines and AI tools that business teams can actually use. I bring together
-                data engineering, predictive modeling and MLOps to move projects beyond notebooks and
-                into production-ready workflows.
-            </p>
-
-            <p class="hero-description">
-                My work spans insurance, aerospace, media and energy: churn prediction, CRM segmentation,
-                recommendation systems, industrial analytics and LLM-powered assistants. I am now extending
-                this foundation into Generative AI and agentic workflows with RAG, LangChain, LangGraph and
-                vector search.
-            </p>
-
-            <div class="hero-actions">
-                <a href="pages/projects.html" class="btn btn-primary">
-                    <span>View My Work</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                    </svg>
-                </a>
-
-                <a href="#contact" class="btn btn-secondary">
-                    <span>Get In Touch</span>
-                </a>
-            </div>
-
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">4+</span>
-                    <span class="stat-label">Years in Data & ML</span>
-                </div>
-
-                <div class="stat">
-                    <span class="stat-number">5M+</span>
-                    <span class="stat-label">Records Processed</span>
-                </div>
-
-                <div class="stat">
-                    <span class="stat-number">4</span>
-                    <span class="stat-label">Industries Covered</span>
-                </div>
-
-                <div class="stat">
-                    <span class="stat-number">DBX</span>
-                    <span class="stat-label">ML & GenAI Certified</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="hero-visual">
-            <div class="hero-network">
-                <div class="network-center">
-                    <div class="center-node">
-                        <div class="center-icon">🤖</div>
-                    </div>
-                </div>
-
-                <div class="network-node node-1" data-skill="Machine Learning">
-                    <div class="node-content">
-                        <div class="node-icon">🧠</div>
-                        <div class="node-label">ML</div>
-                    </div>
-                </div>
-
-                <div class="network-node node-2" data-skill="MLOps">
-                    <div class="node-content">
-                        <div class="node-icon">🚀</div>
-                        <div class="node-label">MLOps</div>
-                    </div>
-                </div>
-
-                <div class="network-node node-3" data-skill="Data Engineering">
-                    <div class="node-content">
-                        <div class="node-icon">⚙️</div>
-                        <div class="node-label">Data</div>
-                    </div>
-                </div>
-
-                <div class="network-node node-4" data-skill="Generative AI">
-                    <div class="node-content">
-                        <div class="node-icon">✨</div>
-                        <div class="node-label">GenAI</div>
-                    </div>
-                </div>
-
-                <div class="network-node node-5" data-skill="RAG Systems">
-                    <div class="node-content">
-                        <div class="node-icon">🔍</div>
-                        <div class="node-label">RAG</div>
-                    </div>
-                </div>
-
-                <div class="network-node node-6" data-skill="Business Impact">
-                    <div class="node-content">
-                        <div class="node-icon">📈</div>
-                        <div class="node-label">Impact</div>
-                    </div>
-                </div>
-
-                <svg class="connection-lines" viewBox="0 0 500 500">
-                    <line class="connection connection-1" x1="250" y1="250" x2="350" y2="100"/>
-                    <line class="connection connection-2" x1="250" y1="250" x2="470" y2="160"/>
-                    <line class="connection connection-3" x1="250" y1="250" x2="390" y2="370"/>
-                    <line class="connection connection-4" x1="250" y1="250" x2="240" y2="410"/>
-                    <line class="connection connection-5" x1="250" y1="250" x2="170" y2="320"/>
-                    <line class="connection connection-6" x1="250" y1="250" x2="170" y2="130"/>
-                </svg>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section class="about" id="about">
     <div class="container">
-        <div class="section-header">
-            <span class="section-badge">About Me</span>
-            <h2 class="section-title">
-                A hands-on ML Engineer who understands the full path from data to production
-            </h2>
-        </div>
+        <div class="hero-grid">
 
-        <div class="about-grid">
-            <div class="about-content">
-                <p class="about-text">
-                    I started from the data layer: pipelines, distributed processing and reliable data foundations.
-                    That experience shaped the way I build machine learning today — not as isolated models, but as
-                    systems connected to data quality, deployment, monitoring and business adoption.
+            <!-- Left — Content -->
+            <div class="hero-content">
+                <div class="available-badge">
+                    <span class="available-dot"></span>
+                    Open to CDI opportunities
+                </div>
+
+                <h1 class="hero-name">
+                    Rostand <span class="accent">Surel</span>
+                </h1>
+
+                <p class="hero-role">
+                    <span id="typed-text"
+                          data-words="Machine Learning Engineer,Data Scientist,MLOps Engineer,GenAI Builder,Databricks Expert">
+                        Machine Learning Engineer
+                    </span><span class="typed-cursor">|</span>
                 </p>
 
-                <p class="about-text">
-                    My profile sits at the intersection of Data Engineering, Machine Learning and MLOps. I have applied
-                    this mix in insurance, aerospace, media and energy, and I am now using it to build more intelligent
-                    solutions with Generative AI, RAG and agentic workflows.
+                <p class="hero-desc">
+                    4 years turning complex operational data into scalable models, production pipelines
+                    and AI-powered tools — across insurance, aerospace, media and energy.
                 </p>
-                
-                <div class="cv-download">
-                    <a href="/assets/cv/Rostand_Surel_CV.pdf" download="Rostand_Surel_CV.pdf" class="btn btn-primary cv-btn" target="_blank" rel="noopener noreferrer">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-                        </svg>
-                        <span>Download CV</span>
+
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Get In Touch
+                    </a>
+                    <a href="assets/cv/Rostand_Surel.pdf" class="btn btn-ghost" download>
+                        <i class="fas fa-download"></i> CV
                     </a>
                 </div>
 
-                <div class="core-skills">
-                    <h3>What I bring</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">🧠</div>
-                            <span>Predictive ML Systems</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-icon">⚙️</div>
-                            <span>Scalable Data Pipelines</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-icon">🚀</div>
-                            <span>MLOps & Model Serving</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-icon">📊</div>
-                            <span>Business-Driven Analytics</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-icon">✨</div>
-                            <span>GenAI & RAG Applications</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-icon">🕸️</div>
-                            <span>Agentic AI Workflows</span>
-                        </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-value" data-count="4" data-suffix="+">4+</span>
+                        <span class="hero-stat-label">Years in Data & ML</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">5M+</span>
+                        <span class="hero-stat-label">Records Processed</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value" data-count="4">4</span>
+                        <span class="hero-stat-label">Industries</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">2×</span>
+                        <span class="hero-stat-label">DBX Certified</span>
                     </div>
                 </div>
             </div>
 
-            <div class="about-visual">
-                <div class="stats-cards">
-                    <div class="stat-card">
-                        <div class="stat-icon">💼</div>
-                        <div class="stat-content">
-                            <span class="stat-value">4+</span>
-                            <span class="stat-label">Years across Data & ML</span>
+            <!-- Right — Terminal Visual -->
+            <div class="hero-visual">
+
+                <!-- Floating badges -->
+                <div class="float-badge badge-axa">
+                    <span class="badge-dot-green"></span>
+                    <div class="badge-info">
+                        <span class="badge-label">Current Role</span>
+                        <span class="badge-value">AXA Insurance · Paris</span>
+                    </div>
+                </div>
+
+                <div class="float-badge badge-cert">
+                    <span class="badge-icon">🏅</span>
+                    <div class="badge-info">
+                        <span class="badge-label">Certifications</span>
+                        <span class="badge-value">2× Databricks</span>
+                    </div>
+                </div>
+
+                <div class="float-badge badge-impact">
+                    <span class="badge-icon">📈</span>
+                    <div class="badge-info">
+                        <span class="badge-label">Impact @ AXA</span>
+                        <span class="badge-value">+18% precision</span>
+                    </div>
+                </div>
+
+                <!-- Terminal card -->
+                <div class="terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <span class="terminal-title">rostand@portfolio ~ python3</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="t-line">
+                            <span class="t-prompt">»»»</span>
+                            <span class="t-cmd">import <span class="t-arr">rostand</span> as rs</span>
+                        </div>
+                        <div class="t-blank"></div>
+                        <div class="t-line">
+                            <span class="t-prompt">»»»</span>
+                            <span class="t-cmd">rs.<span class="t-key">current_position</span></span>
+                        </div>
+                        <div class="t-result">
+                            <span class="t-str">'Consultant Data Scientist @ AXA'</span>
+                        </div>
+                        <div class="t-blank"></div>
+                        <div class="t-line">
+                            <span class="t-prompt">»»»</span>
+                            <span class="t-cmd">rs.<span class="t-key">expertise</span></span>
+                        </div>
+                        <ul class="t-list">
+                            <li><span class="t-str">'Machine Learning Engineering'</span></li>
+                            <li><span class="t-str">'MLOps &amp; Model Serving'</span></li>
+                            <li><span class="t-str">'Generative AI &amp; RAG'</span></li>
+                        </ul>
+                        <div class="t-blank"></div>
+                        <div class="t-line">
+                            <span class="t-prompt">»»»</span>
+                            <span class="t-cmd">rs.<span class="t-key">certifications</span></span>
+                        </div>
+                        <ul class="t-list">
+                            <li><span class="t-str">'Databricks ML Associate'</span></li>
+                            <li><span class="t-str">'Databricks GenAI Engineer'</span></li>
+                        </ul>
+                        <div class="t-blank"></div>
+                        <div class="t-line">
+                            <span class="t-prompt">»»»</span>
+                            <span class="t-comment"># Ready for next challenge ✓</span>
                         </div>
                     </div>
-
-                    <div class="stat-card">
-                        <div class="stat-icon">⚡</div>
-                        <div class="stat-content">
-                            <span class="stat-value">5M+</span>
-                            <span class="stat-label">Records Processed on Databricks</span>
-                        </div>
-                    </div>
-
-                    <div class="stat-card">
-                        <div class="stat-icon">🏅</div>
-                        <div class="stat-content">
-                            <span class="stat-value">2</span>
-                            <span class="stat-label">Databricks Certifications: ML & GenAI</span>
-                        </div>
-                    </div>
-
-                    <div class="stat-card">
-                        <div class="stat-icon">🏭</div>
-                        <div class="stat-content">
-                            <span class="stat-value">4</span>
-                            <span class="stat-label">Industries: Insurance, Aerospace, Media, Energy</span>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Skills & Competencies Section -->
-<section class="skills-competencies" id="skills">
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section class="about" id="about">
     <div class="container">
         <div class="section-header">
-            <span class="section-badge">Technical Skills</span>
-            <h2 class="section-title">Core Skills & Competencies</h2>
+            <span class="section-tag">About me</span>
+            <h2 class="section-title">From raw data to production — the full path</h2>
+        </div>
+
+        <div class="about-grid">
+            <!-- Left — Text -->
+            <div class="reveal-left">
+                <p class="about-text">
+                    I started from the data layer — pipelines, distributed processing, reliable foundations.
+                    That experience shaped how I build machine learning today: not as isolated models,
+                    but as end-to-end systems connected to data quality, deployment, monitoring and business adoption.
+                </p>
+                <p class="about-text">
+                    My profile sits at the intersection of <strong>Data Engineering</strong>,
+                    <strong>Machine Learning</strong> and <strong>MLOps</strong>. I've applied this mix
+                    in insurance, aerospace, media and energy — and I'm now extending it into
+                    <strong>Generative AI</strong>, RAG architectures and agentic workflows.
+                </p>
+
+                <div class="about-ctas">
+                    <a href="assets/cv/Rostand_Surel.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="https://www.linkedin.com/in/rostand-surel/" class="btn btn-outline" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Manda404" class="btn btn-ghost" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+
+                <div class="about-what">
+                    <h3>What I bring</h3>
+                    <div class="what-grid">
+                        <div class="what-item">
+                            <span class="what-icon">🧠</span> Predictive ML Systems
+                        </div>
+                        <div class="what-item">
+                            <span class="what-icon">⚙️</span> Scalable Data Pipelines
+                        </div>
+                        <div class="what-item">
+                            <span class="what-icon">🚀</span> MLOps &amp; Model Serving
+                        </div>
+                        <div class="what-item">
+                            <span class="what-icon">✨</span> GenAI &amp; RAG Applications
+                        </div>
+                        <div class="what-item">
+                            <span class="what-icon">📊</span> Business-Driven Analytics
+                        </div>
+                        <div class="what-item">
+                            <span class="what-icon">🌍</span> FR · EN · IT trilingual
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right — Stats cards -->
+            <div class="stats-grid reveal-right">
+                <div class="stat-card">
+                    <div class="stat-card-icon">💼</div>
+                    <span class="stat-card-value" data-count="4" data-suffix="+">4+</span>
+                    <span class="stat-card-label">Years across Data &amp; ML</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-icon">⚡</div>
+                    <span class="stat-card-value">5M+</span>
+                    <span class="stat-card-label">Records processed on Databricks</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-icon">🏅</div>
+                    <span class="stat-card-value" data-count="2">2</span>
+                    <span class="stat-card-label">Databricks Certifications</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-icon">🏭</div>
+                    <span class="stat-card-value" data-count="4">4</span>
+                    <span class="stat-card-label">Industries: Insurance · Aerospace · Media · Energy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════ -->
+<section class="skills" id="skills">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Technical Skills</span>
+            <h2 class="section-title">Core Stack &amp; Competencies</h2>
             <p class="section-subtitle">
-                A focused technical stack built around three pillars: predictive ML systems,
-                production-ready MLOps, and practical Generative AI applications.
+                Three pillars — predictive ML engineering, production MLOps, and practical Generative AI —
+                supported by big data infrastructure and clean software practices.
             </p>
         </div>
 
-        <div class="tech-stack-expanded">
+        <div class="skills-grid">
 
-            <!-- Block 1: Core ML Engineer -->
-            <div class="tech-category tech-category-highlight">
-                <h4>Machine Learning Engineering</h4>
-                <div class="tech-items">
-                    <span class="tech-item">
-                        <i class="fas fa-chart-line tech-icon"></i>
-                        XGBoost
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-chart-line tech-icon"></i>
-                        CatBoost
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-chart-line tech-icon"></i>
-                        LightGBM
-                    </span>
-                    <span class="tech-item">
-                        <i class="fab fa-python tech-icon"></i>
-                        Scikit-learn
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-sliders-h tech-icon"></i>
-                        Feature Engineering
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-search-plus tech-icon"></i>
-                        SHAP / LIME
-                    </span>
+            <!-- Machine Learning -->
+            <div class="skill-card highlight">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">🧠</div>
+                    <span class="skill-card-title">Machine Learning</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">LightGBM</span>
+                    <span class="tag">CatBoost</span>
+                    <span class="tag">Scikit-Learn</span>
+                    <span class="tag">Feature Engineering</span>
+                    <span class="tag">SHAP</span>
+                    <span class="tag">LIME</span>
+                    <span class="tag">Deep Learning</span>
                 </div>
             </div>
 
-            <!-- Block 2: Data Engineering & MLOps -->
-            <div class="tech-category tech-category-highlight">
-                <h4>Data Engineering & MLOps</h4>
-                <div class="tech-items">
-                    <span class="tech-item">
-                        <i class="fas fa-fire tech-icon"></i>
-                        PySpark
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-database tech-icon"></i>
-                        Databricks
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-chart-line tech-icon"></i>
-                        MLflow
-                    </span>
-                    <span class="tech-item">
-                        <i class="fab fa-docker tech-icon"></i>
-                        Docker
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-code-branch tech-icon"></i>
-                        CI/CD
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-rocket tech-icon"></i>
-                        Model Serving
-                    </span>
+            <!-- MLOps -->
+            <div class="skill-card highlight">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">🚀</div>
+                    <span class="skill-card-title">MLOps &amp; Deployment</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">MLflow</span>
+                    <span class="tag">DVC</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">CI/CD</span>
+                    <span class="tag">Azure DevOps</span>
+                    <span class="tag">Grafana</span>
+                    <span class="tag">Prometheus</span>
+                    <span class="tag">Data Drift</span>
                 </div>
             </div>
 
-            <!-- Block 3: GenAI & Agentic AI -->
-            <div class="tech-category tech-category-emerging">
-                <h4>Generative AI & Agentic AI</h4>
-                <div class="tech-items">
-                    <span class="tech-item">
-                        <i class="fas fa-project-diagram tech-icon"></i>
-                        RAG
-                    </span>
-                    <span class="tech-item">
-                        <span class="tech-logo-emoji">🦜🔗</span>
-                        LangChain
-                    </span>
-                    <span class="tech-item">
-                        <span class="tech-logo-emoji">🦜🕸️</span>
-                        LangGraph
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-vector-square tech-icon"></i>
-                        Embeddings
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-database tech-icon"></i>
-                        FAISS / Pinecone
-                    </span>
-                    <span class="tech-item">
-                        <i class="fas fa-comment-dots tech-icon"></i>
-                        Prompt Engineering
-                    </span>
+            <!-- GenAI -->
+            <div class="skill-card highlight">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">✨</div>
+                    <span class="skill-card-title">Generative AI &amp; NLP</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">GPT / BERT</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">LangGraph</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">HuggingFace</span>
+                    <span class="tag">Embeddings</span>
+                    <span class="tag">FAISS</span>
+                    <span class="tag">Pinecone</span>
+                    <span class="tag">Prompt Engineering</span>
+                </div>
+            </div>
+
+            <!-- Big Data & Cloud -->
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">☁️</div>
+                    <span class="skill-card-title">Big Data &amp; Cloud</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">PySpark</span>
+                    <span class="tag">Databricks</span>
+                    <span class="tag">Kafka</span>
+                    <span class="tag">Airflow</span>
+                    <span class="tag">Apache NiFi</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">Azure</span>
+                    <span class="tag">Feature Store</span>
+                    <span class="tag">Delta Lake</span>
+                </div>
+            </div>
+
+            <!-- Programming & Data -->
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">💻</div>
+                    <span class="skill-card-title">Programming &amp; Data</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">HiveQL</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">API Design</span>
+                    <span class="tag">Streamlit</span>
+                </div>
+            </div>
+
+            <!-- Certifications & Languages -->
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">🌍</div>
+                    <span class="skill-card-title">Certifications &amp; Languages</span>
+                </div>
+                <div class="tags">
+                    <span class="tag" style="border-color:var(--border-accent);color:var(--accent)">🏅 DBX ML Associate</span>
+                    <span class="tag" style="border-color:var(--border-accent);color:var(--accent)">🏅 DBX GenAI Engineer</span>
+                    <span class="tag">🇫🇷 French — C2</span>
+                    <span class="tag">🇬🇧 English — B2</span>
+                    <span class="tag">🇮🇹 Italian — B2</span>
+                    <span class="tag">Deep Learning Spec.</span>
+                    <span class="tag">NLP Specialization</span>
+                    <span class="tag">Azure ML Fundamentals</span>
                 </div>
             </div>
 
@@ -508,232 +462,378 @@
     </div>
 </section>
 
-<!-- Education & Certifications Section -->
-<section class="education-certifications" id="education">
+<!-- ══════════════════════════════════════════
+     EXPERIENCE — Vertical Timeline
+══════════════════════════════════════════ -->
+<section class="experience" id="experience">
     <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Qualifications</span>
-            <h2 class="section-title">Education & Certifications</h2>
+        <div class="section-header reveal">
+            <span class="section-tag">Experience</span>
+            <h2 class="section-title">Professional Journey</h2>
+            <p class="section-subtitle">
+                A cross-industry journey connecting raw data to measurable business impact.
+            </p>
         </div>
 
-        <div class="edu-cert-grid">
+        <div class="timeline">
+
+            <!-- ── AXA (current) ── -->
+            <div class="timeline-item current reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-head">
+                        <span class="timeline-date">Jan 2025 — Present</span>
+                        <span class="timeline-badge">
+                            <span class="available-dot" style="width:6px;height:6px;"></span>
+                            Current
+                        </span>
+                    </div>
+                    <h3 class="timeline-role">Consultant Data Scientist</h3>
+                    <p class="timeline-company">Assurances AXA — Préfecture de Nanterre, France</p>
+                    <p class="timeline-objective">
+                        Predict customer churn at scale and industrialise ML models to improve marketing efficiency.
+                    </p>
+                    <ul class="timeline-list">
+                        <li>Explored and transformed massive datasets (~5M rows) on Databricks with PySpark to engineer relevant features.</li>
+                        <li>Trained churn prediction models using XGBoost and CatBoost with robust cross-validation.</li>
+                        <li>Packaged data pipelines with unit-tested Python libraries, deployed via Azure Pipelines CI/CD.</li>
+                        <li>Deployed ML models via Databricks Model Serving to integrate predictions into CRM applications.</li>
+                    </ul>
+                    <span class="timeline-impact">📈 +18% precision on high-risk customer detection</span>
+                    <div class="timeline-tags">
+                        <span class="tag">Databricks</span>
+                        <span class="tag">PySpark</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">CatBoost</span>
+                        <span class="tag">MLflow</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Azure</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Safran Seats ── -->
+            <div class="timeline-item reveal" data-delay="100">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-head">
+                        <span class="timeline-date">Apr 2024 — Nov 2024</span>
+                    </div>
+                    <h3 class="timeline-role">Data Scientist</h3>
+                    <p class="timeline-company">Safran Seats — Issoudun, France</p>
+                    <p class="timeline-objective">
+                        Optimise the aircraft seat design process by simulating comfort from experimental data.
+                    </p>
+                    <ul class="timeline-list">
+                        <li>Cleaned, structured and enriched aircraft seat comfort test data for quality and relevance.</li>
+                        <li>Optimised comfort test data management with an evolutionary data model under PostgreSQL.</li>
+                        <li>Developed an interactive analytics dashboard to visualise test data and extract business insights.</li>
+                        <li>Built an LLM-powered SQL assistant (SQLCoder) to simplify data access for non-technical users.</li>
+                    </ul>
+                    <span class="timeline-impact">⚡ +65% faster data analysis through automation</span>
+                    <div class="timeline-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">LLM (SQLCoder)</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Dashboard</span>
+                        <span class="tag">Data Modeling</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Sky TV ── -->
+            <div class="timeline-item reveal" data-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-head">
+                        <span class="timeline-date">Oct 2022 — Nov 2023</span>
+                    </div>
+                    <h3 class="timeline-role">Consultant Data Scientist</h3>
+                    <p class="timeline-company">Sky TV — Milan, Italy</p>
+                    <p class="timeline-objective">
+                        Build a predictive segmentation engine to target high-potential customers in personalised CRM.
+                    </p>
+                    <ul class="timeline-list">
+                        <li>Performed exploratory data analysis with Spark to detect anomalies and fix inconsistencies.</li>
+                        <li>Developed SQL queries and Python EDA to extract and analyse customer data.</li>
+                        <li>Designed deep-learning-based recommendation models for personalised offers.</li>
+                        <li>Trained and optimised XGBoost model with structured performance tracking via MLflow.</li>
+                    </ul>
+                    <span class="timeline-impact">🎯 +24% targeted campaign effectiveness</span>
+                    <div class="timeline-tags">
+                        <span class="tag">Spark</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">MLflow</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Kuwait Petroleum ── -->
+            <div class="timeline-item reveal" data-delay="300">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-head">
+                        <span class="timeline-date">Sep 2020 — Oct 2022</span>
+                    </div>
+                    <h3 class="timeline-role">Consultant Data Engineer</h3>
+                    <p class="timeline-company">Kuwait Petroleum S.p.A — Milan, Italy</p>
+                    <p class="timeline-objective">
+                        Modernise the data architecture to automate and secure fuel distribution data management.
+                    </p>
+                    <ul class="timeline-list">
+                        <li>Automated data collection and ingestion with Apache NiFi, stored in HDFS for distributed processing.</li>
+                        <li>Designed and maintained Hive tables (HiveQL) to structure and query fuel production data.</li>
+                        <li>Developed PySpark jobs for distributed data processing, improving analysis efficiency.</li>
+                        <li>Orchestrated workflows with Airflow, increasing reliability of collect, transform and load processes.</li>
+                    </ul>
+                    <span class="timeline-impact">🔧 -40% data collection errors across multiple sources</span>
+                    <div class="timeline-tags">
+                        <span class="tag">Apache NiFi</span>
+                        <span class="tag">PySpark</span>
+                        <span class="tag">HiveQL</span>
+                        <span class="tag">HDFS</span>
+                        <span class="tag">Airflow</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════════ -->
+<section class="projects" id="projects">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Featured Work</span>
+            <h2 class="section-title">Projects built around real business needs</h2>
+            <p class="section-subtitle">
+                Portfolio projects covering agentic AI, Databricks MLOps, scalable data engineering
+                and the BrevetAnalyzer — a real production tool deployed on AWS.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- BrevetAnalyzer (real production project from CV) -->
+            <div class="project-card featured">
+                <div class="project-top">
+                    <span class="project-type">GenAI · RAG · Production</span>
+                    <div class="project-links">
+                        <a href="https://github.com/Manda404" class="project-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">BrevetAnalyzer IA — Patent Intelligence Platform</h3>
+                <p class="project-desc">
+                    Intelligent patent analysis tool built on a RAG architecture. Semantic search engine,
+                    generative AI summaries and proactive detection of competitor innovations, deployed on AWS.
+                    Adopted by R&amp;D teams.
+                </p>
+                <span class="project-impact">🚀 65% faster patent research</span>
+                <div class="project-tags">
+                    <span class="tag">RAG</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">FAISS</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">Embeddings</span>
+                </div>
+            </div>
+
+            <!-- AssureClaim Agent -->
+            <div class="project-card featured">
+                <div class="project-top">
+                    <span class="project-type">Agentic AI · Insurance</span>
+                    <div class="project-links">
+                        <a href="https://github.com/Manda404" class="project-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">AssureClaim Agent — Claims Triage Copilot</h3>
+                <p class="project-desc">
+                    Agentic assistant that reads claim documents, retrieves policy context via RAG,
+                    highlights risk signals and prepares a clear decision brief for human adjusters.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">LangGraph</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">FAISS</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Python</span>
+                </div>
+            </div>
+
+            <!-- ChurnOps Lakehouse -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-type">MLOps · Databricks</span>
+                    <div class="project-links">
+                        <a href="https://github.com/Manda404" class="project-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">ChurnOps Lakehouse — Retention ML Pipeline</h3>
+                <p class="project-desc">
+                    End-to-end Databricks project for churn prediction: feature engineering, model training,
+                    MLflow tracking, model registry, batch scoring and monitoring-ready outputs.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Databricks</span>
+                    <span class="tag">PySpark</span>
+                    <span class="tag">CatBoost</span>
+                    <span class="tag">MLflow</span>
+                    <span class="tag">Delta Lake</span>
+                </div>
+            </div>
+
+            <!-- CreditReview Agent -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-type">Agentic AI · Banking</span>
+                    <div class="project-links">
+                        <a href="https://github.com/Manda404" class="project-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">CreditReview Agent — Explainable Risk Assistant</h3>
+                <p class="project-desc">
+                    Banking copilot combining credit scoring, SHAP explanations and policy rules to generate
+                    auditable, human-readable summaries for risk analysts.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">LangChain</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">SHAP</span>
+                    <span class="tag">MLflow</span>
+                    <span class="tag">FastAPI</span>
+                </div>
+            </div>
+
+            <!-- NextBestAction -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-type">MLOps · Recommendation</span>
+                    <div class="project-links">
+                        <a href="https://github.com/Manda404" class="project-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">NextBestAction ML — CRM Recommendation Engine</h3>
+                <p class="project-desc">
+                    Production-style recommendation workflow for CRM teams: segmentation, feature tables,
+                    model validation, experiment tracking and deployable batch scoring jobs.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Databricks</span>
+                    <span class="tag">LightGBM</span>
+                    <span class="tag">Feature Store</span>
+                    <span class="tag">Model Serving</span>
+                </div>
+            </div>
+
+            <!-- FuelOps -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-type">Data Engineering · Industrial</span>
+                    <div class="project-links">
+                        <a href="https://github.com/Manda404" class="project-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">FuelOps Data Platform — Industrial Batch Pipelines</h3>
+                <p class="project-desc">
+                    Industrial data platform for ingesting, transforming and monitoring operational data
+                    from multiple sources. Inspired by fuel distribution and supply-chain analytics.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Apache NiFi</span>
+                    <span class="tag">PySpark</span>
+                    <span class="tag">Hive</span>
+                    <span class="tag">Airflow</span>
+                    <span class="tag">HDFS</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     EDUCATION & CERTIFICATIONS (inline, compact)
+══════════════════════════════════════════ -->
+<section style="padding:70px 0; background:var(--bg-secondary);" id="education">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Qualifications</span>
+            <h2 class="section-title">Education &amp; Certifications</h2>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;" class="edu-cert-wrap">
 
             <!-- Education -->
-            <div class="education-section">
-                <h3>Education</h3>
+            <div class="reveal-left">
+                <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:.05em;font-family:'Montserrat',sans-serif;">
+                    🎓 Education
+                </h3>
+                <div style="display:flex;flex-direction:column;gap:1rem;">
 
-                <div class="education-list">
-
-                    <div class="education-item">
-                        <div class="edu-icon">🎓</div>
-                        <div class="edu-content">
-                            <h4>Master in Data Science and Artificial Intelligence</h4>
-                            <p>ECE, Lyon, France</p>
-                            <span class="edu-year">2023 - 2024</span>
-                        </div>
+                    <div class="project-card" style="padding:1.25rem 1.5rem;">
+                        <div style="font-size:.75rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;margin-bottom:.25rem;">2023 – 2024</div>
+                        <div style="font-weight:700;color:var(--text-primary);margin-bottom:.2rem;">Master — Data Science &amp; AI</div>
+                        <div style="font-size:.9rem;color:var(--text-secondary);">ECE Engineering School, Lyon, France</div>
                     </div>
 
-                    <div class="education-item">
-                        <div class="edu-icon">🎓</div>
-                        <div class="edu-content">
-                            <h4>Bachelor's Degree in Computer Engineering</h4>
-                            <p>Politecnico di Torino, Turin, Italy</p>
-                            <span class="edu-year">2017 - 2020</span>
-                        </div>
+                    <div class="project-card" style="padding:1.25rem 1.5rem;">
+                        <div style="font-size:.75rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;margin-bottom:.25rem;">2017 – 2020</div>
+                        <div style="font-weight:700;color:var(--text-primary);margin-bottom:.2rem;">Bachelor — Computer Engineering</div>
+                        <div style="font-size:.9rem;color:var(--text-secondary);">Politecnico di Torino, Turin, Italy</div>
                     </div>
 
                 </div>
             </div>
 
             <!-- Certifications -->
-            <div class="certifications-section">
-                <h3>Key Certifications</h3>
+            <div class="reveal-right">
+                <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:.05em;font-family:'Montserrat',sans-serif;">
+                    🏅 Certifications
+                </h3>
+                <div style="display:flex;flex-direction:column;gap:.75rem;">
 
-                <div class="certifications-grid">
-
-                    <div class="cert-item">
-                        <div class="cert-badge">DBX</div>
-                        <span>Databricks Certified Machine Learning Associate</span>
+                    <div class="project-card" style="padding:1rem 1.5rem;flex-direction:row;align-items:center;gap:1rem;">
+                        <div style="background:var(--accent);color:#fff;font-weight:800;font-size:.7rem;padding:.4rem .6rem;border-radius:6px;flex-shrink:0;">DBX</div>
+                        <span style="font-size:.9rem;color:var(--text-secondary);font-weight:500;">Databricks Certified Machine Learning Associate</span>
                     </div>
 
-                    <div class="cert-item">
-                        <div class="cert-badge">DBX</div>
-                        <span>Databricks Certified Generative AI Engineer Associate</span>
+                    <div class="project-card" style="padding:1rem 1.5rem;flex-direction:row;align-items:center;gap:1rem;">
+                        <div style="background:var(--accent);color:#fff;font-weight:800;font-size:.7rem;padding:.4rem .6rem;border-radius:6px;flex-shrink:0;">DBX</div>
+                        <span style="font-size:.9rem;color:var(--text-secondary);font-weight:500;">Databricks Certified Generative AI Engineer Associate</span>
                     </div>
 
-                    <div class="cert-item">
-                        <div class="cert-badge">DL</div>
-                        <span>Deep Learning Specialization</span>
+                    <div class="project-card" style="padding:1rem 1.5rem;flex-direction:row;align-items:center;gap:1rem;">
+                        <div style="background:var(--bg-tertiary);color:var(--text-secondary);font-weight:800;font-size:.7rem;padding:.4rem .6rem;border-radius:6px;flex-shrink:0;border:1px solid var(--border);">DL</div>
+                        <span style="font-size:.9rem;color:var(--text-secondary);font-weight:500;">Deep Learning Specialization — Coursera</span>
                     </div>
 
-                    <div class="cert-item">
-                        <div class="cert-badge">NLP</div>
-                        <span>NLP Specialization</span>
+                    <div class="project-card" style="padding:1rem 1.5rem;flex-direction:row;align-items:center;gap:1rem;">
+                        <div style="background:var(--bg-tertiary);color:var(--text-secondary);font-weight:800;font-size:.7rem;padding:.4rem .6rem;border-radius:6px;flex-shrink:0;border:1px solid var(--border);">NLP</div>
+                        <span style="font-size:.9rem;color:var(--text-secondary);font-weight:500;">NLP Specialization — Coursera</span>
                     </div>
 
-                    <div class="cert-item">
-                        <div class="cert-badge">AZ</div>
-                        <span>Azure ML Fundamentals</span>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-badge">PY</div>
-                        <span>AI Programming with Python</span>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section class="experience" id="experience">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Experience</span>
-            <h2 class="section-title">Professional Journey</h2>
-            <p class="section-subtitle">
-                A cross-industry journey turning operational data into predictive models,
-                analytics tools and scalable ML workflows.
-            </p>
-        </div>
-
-        <div class="timeline-container">
-            <div class="timeline-track">
-                <div class="timeline-line"></div>
-
-                <div class="timeline-items">
-
-                    <!-- Experience 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">Jan 2025 – Present</div>
-                            <h3 class="timeline-role">Consultant Data Scientist</h3>
-                            <div class="timeline-company">Assurances AXA — Nanterre, France</div>
-
-                            <ul class="timeline-description">
-                                <li>Churn prediction at scale for customer retention.</li>
-                                <li>Databricks, PySpark, XGBoost and CatBoost.</li>
-                                <li><strong>Impact:</strong> +18% improvement in high-risk customer detection.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Experience 2 -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">Apr 2024 – Nov 2024</div>
-                            <h3 class="timeline-role">Data Scientist</h3>
-                            <div class="timeline-company">Safran Seats — Issoudun, France</div>
-
-                            <ul class="timeline-description">
-                                <li>AI-powered analytics for aircraft seat comfort testing.</li>
-                                <li>PostgreSQL, dashboards and LLM-powered SQL assistant.</li>
-                                <li><strong>Impact:</strong> 65% faster data analysis.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Experience 3 -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">Oct 2022 – Nov 2023</div>
-                            <h3 class="timeline-role">Consultant Data Scientist</h3>
-                            <div class="timeline-company">Sky TV — Milan, Italy</div>
-
-                            <ul class="timeline-description">
-                                <li>Predictive segmentation for personalized CRM campaigns.</li>
-                                <li>Spark, SQL, recommendation models and MLflow.</li>
-                                <li><strong>Impact:</strong> +24% campaign effectiveness.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Experience 4 -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">Sep 2020 – Oct 2022</div>
-                            <h3 class="timeline-role">Consultant Data Engineer</h3>
-                            <div class="timeline-company">Kuwait Petroleum S.p.A — Milan, Italy</div>
-
-                            <ul class="timeline-description">
-                                <li>Scalable data pipelines for fuel distribution operations.</li>
-                                <li>NiFi, HDFS, Hive, PySpark and Airflow.</li>
-                                <li><strong>Impact:</strong> 40% fewer collection errors.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Duplicate items for seamless scrolling -->
-
-                    <!-- Experience 1 Duplicate -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">Jan 2025 – Present</div>
-                            <h3 class="timeline-role">Consultant Data Scientist</h3>
-                            <div class="timeline-company">Assurances AXA — Nanterre, France</div>
-
-                            <ul class="timeline-description">
-                                <li>Churn prediction at scale for customer retention.</li>
-                                <li>Databricks, PySpark, XGBoost and CatBoost.</li>
-                                <li><strong>Impact:</strong> +18% improvement in high-risk customer detection.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Experience 2 Duplicate -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">Apr 2024 – Nov 2024</div>
-                            <h3 class="timeline-role">Data Scientist</h3>
-                            <div class="timeline-company">Safran Seats — Issoudun, France</div>
-
-                            <ul class="timeline-description">
-                                <li>AI-powered analytics for aircraft seat comfort testing.</li>
-                                <li>PostgreSQL, dashboards and LLM-powered SQL assistant.</li>
-                                <li><strong>Impact:</strong> 65% faster data analysis.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Experience 3 Duplicate -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">Oct 2022 – Nov 2023</div>
-                            <h3 class="timeline-role">Consultant Data Scientist</h3>
-                            <div class="timeline-company">Sky TV — Milan, Italy</div>
-
-                            <ul class="timeline-description">
-                                <li>Predictive segmentation for personalized CRM campaigns.</li>
-                                <li>Spark, SQL, recommendation models and MLflow.</li>
-                                <li><strong>Impact:</strong> +24% campaign effectiveness.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Experience 4 Duplicate -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">Sep 2020 – Oct 2022</div>
-                            <h3 class="timeline-role">Consultant Data Engineer</h3>
-                            <div class="timeline-company">Kuwait Petroleum S.p.A — Milan, Italy</div>
-
-                            <ul class="timeline-description">
-                                <li>Scalable data pipelines for fuel distribution operations.</li>
-                                <li>NiFi, HDFS, Hive, PySpark and Airflow.</li>
-                                <li><strong>Impact:</strong> 40% fewer collection errors.</li>
-                            </ul>
-                        </div>
+                    <div class="project-card" style="padding:1rem 1.5rem;flex-direction:row;align-items:center;gap:1rem;">
+                        <div style="background:var(--bg-tertiary);color:var(--text-secondary);font-weight:800;font-size:.7rem;padding:.4rem .6rem;border-radius:6px;flex-shrink:0;border:1px solid var(--border);">AZ</div>
+                        <span style="font-size:.9rem;color:var(--text-secondary);font-weight:500;">Azure ML Fundamentals — Microsoft</span>
                     </div>
 
                 </div>
@@ -742,307 +842,121 @@
     </div>
 </section>
 
-<!-- Featured Projects -->
-<section class="featured-projects" id="projects">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Featured Work</span>
-            <h2 class="section-title">Projects designed around real business needs</h2>
-            <p class="section-subtitle">
-                Six portfolio projects selected to showcase the full arc of my profile:
-                agentic AI for finance and insurance, Databricks MLOps, and scalable data engineering.
-            </p>
-            <a href="pages/projects.html" class="view-all-link">
-                View All Projects
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                </svg>
-            </a>
-        </div>
-
-        <div class="projects-grid">
-
-            <!-- Project 1: Agentic AI / Insurance -->
-            <div class="project-card featured">
-                <div class="project-header">
-                    <div class="project-type">Agentic AI • Insurance</div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" aria-label="Open project demo">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="project-link" aria-label="Open GitHub repository">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.09 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <h3 class="project-title">AssureClaim Agent — Claims Triage Copilot</h3>
-                <p class="project-description">
-                    Agentic assistant that reads claim documents, retrieves policy context, highlights risk signals
-                    and prepares a clear decision brief for human adjusters.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">LangGraph</span>
-                    <span class="tech-tag">RAG</span>
-                    <span class="tech-tag">FAISS</span>
-                    <span class="tech-tag">FastAPI</span>
-                </div>
-            </div>
-
-            <!-- Project 2: Agentic AI / Banking -->
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-type">Agentic AI • Banking</div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" aria-label="Open project demo">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <h3 class="project-title">CreditReview Agent — Explainable Risk Assistant</h3>
-                <p class="project-description">
-                    Banking copilot that combines credit scoring, SHAP explanations and policy rules to generate
-                    auditable summaries for risk analysts.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">LangChain</span>
-                    <span class="tech-tag">XGBoost</span>
-                    <span class="tech-tag">SHAP</span>
-                    <span class="tech-tag">MLflow</span>
-                </div>
-            </div>
-
-            <!-- Project 3: Databricks MLOps / Insurance -->
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-type">MLOps • Databricks</div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" aria-label="Open GitHub repository">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.09 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.09 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <h3 class="project-title">ChurnOps Lakehouse — Retention ML Pipeline</h3>
-                <p class="project-description">
-                    End-to-end Databricks project for churn prediction: feature engineering, model training,
-                    MLflow tracking, registry, batch scoring and monitoring-ready outputs.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Databricks</span>
-                    <span class="tech-tag">PySpark</span>
-                    <span class="tech-tag">CatBoost</span>
-                    <span class="tech-tag">MLflow</span>
-                </div>
-            </div>
-
-            <!-- Project 4: Databricks MLOps / Recommendation -->
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-type">MLOps • Recommendation</div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" aria-label="Open GitHub repository">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.09 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.09 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <h3 class="project-title">NextBestAction ML — CRM Recommendation Engine</h3>
-                <p class="project-description">
-                    Production-style recommendation workflow for CRM teams: segmentation, feature tables,
-                    model validation, experiment tracking and deployable scoring jobs.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Databricks</span>
-                    <span class="tech-tag">LightGBM</span>
-                    <span class="tech-tag">Feature Store</span>
-                    <span class="tech-tag">Model Serving</span>
-                </div>
-            </div>
-
-            <!-- Project 5: Data Engineering / Streaming -->
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-type">Data Engineering • Streaming</div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" aria-label="Open project demo">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <h3 class="project-title">EventStream Lakehouse — Real-Time Policy Events</h3>
-                <p class="project-description">
-                    Streaming lakehouse pipeline that ingests policy events, validates data quality, enriches customer
-                    activity and serves fresh features for analytics and ML use cases.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Kafka</span>
-                    <span class="tech-tag">Spark Streaming</span>
-                    <span class="tech-tag">Delta Lake</span>
-                    <span class="tech-tag">Databricks</span>
-                </div>
-            </div>
-
-            <!-- Project 6: Data Engineering / Batch Orchestration -->
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-type">Data Engineering • Orchestration</div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" aria-label="Open GitHub repository">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.09 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.09 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <h3 class="project-title">FuelOps Data Platform — Industrial Batch Pipelines</h3>
-                <p class="project-description">
-                    Industrial data platform for ingesting, transforming and monitoring operational data from multiple
-                    sources, inspired by fuel distribution and supply-chain analytics.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Apache NiFi</span>
-                    <span class="tech-tag">PySpark</span>
-                    <span class="tech-tag">Hive</span>
-                    <span class="tech-tag">Airflow</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Testimonials Section (moved below blog) -->
-<section class="testimonials" id="testimonials">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge">What Colleagues Say</span>
-            <h2 class="section-title">Testimonials</h2>
-        </div>
-    </div>
-    <div class="testimonials-viewport">
-        <div class="testimonials-track"></div>
-    </div>
-</section>
-
-<!-- Contact Section -->
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
 <section class="contact" id="contact">
     <div class="container">
-        <div class="contact-content">
-            <div class="contact-info">
-                <span class="section-badge">Get In Touch</span>
-                <h2 class="section-title">Looking for someone who can connect data, ML and production?</h2>
-                <p class="contact-description">
-                    I am open to Machine Learning Engineering, Data Science and MLOps opportunities — especially
-                    roles involving Databricks, predictive modeling, scalable data pipelines and Generative AI use cases.
+        <div class="contact-grid">
+
+            <!-- Left — Info -->
+            <div class="reveal-left">
+                <span class="section-tag">Get in touch</span>
+                <h2 class="contact-title">Looking for someone who connects data, ML and production?</h2>
+                <p class="contact-desc">
+                    I'm open to Machine Learning Engineering, Data Science and MLOps opportunities —
+                    especially roles involving Databricks, predictive modeling, scalable pipelines and GenAI.
+                    Based in Versailles, France. Open to remote.
                 </p>
 
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <div class="contact-label">Email</div>
-                            <a href="mailto:rostandsurel@yahoo.com" class="contact-value">
-                                rostandsurel@yahoo.com
-                            </a>
+                <div class="contact-links">
+                    <a href="mailto:rostandsurel@yahoo.com" class="contact-link">
+                        <div class="contact-link-icon">📧</div>
+                        <div class="contact-link-body">
+                            <div class="contact-link-label">Email</div>
+                            <div class="contact-link-value">rostandsurel@yahoo.com</div>
                         </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">💼</div>
-                        <div>
-                            <div class="contact-label">LinkedIn</div>
-                            <a href="https://www.linkedin.com/in/rostand-surel/" class="contact-value" target="_blank" rel="noopener noreferrer">
-                                linkedin.com/in/rostand-surel
-                            </a>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rostand-surel/" class="contact-link" target="_blank" rel="noopener">
+                        <div class="contact-link-icon">💼</div>
+                        <div class="contact-link-body">
+                            <div class="contact-link-label">LinkedIn</div>
+                            <div class="contact-link-value">linkedin.com/in/rostand-surel</div>
                         </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">💻</div>
-                        <div>
-                            <div class="contact-label">GitHub</div>
-                            <a href="https://github.com/Manda404" class="contact-value" target="_blank" rel="noopener noreferrer">
-                                github.com/Manda404
-                            </a>
+                    </a>
+                    <a href="https://github.com/Manda404" class="contact-link" target="_blank" rel="noopener">
+                        <div class="contact-link-icon">💻</div>
+                        <div class="contact-link-body">
+                            <div class="contact-link-label">GitHub</div>
+                            <div class="contact-link-value">github.com/Manda404</div>
                         </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <div class="contact-label">Location</div>
-                            <span class="contact-value">Versailles, France</span>
+                    </a>
+                    <div class="contact-link" style="cursor:default;">
+                        <div class="contact-link-icon">📍</div>
+                        <div class="contact-link-body">
+                            <div class="contact-link-label">Location</div>
+                            <div class="contact-link-value">Versailles, France · Open to Remote</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="contact-form">
-                <form class="form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">
-                        <span>Send Message</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
-                        </svg>
-                    </button>
-                </form>
+            <!-- Right — Form -->
+            <div class="reveal-right">
+                <div class="contact-form-box">
+                    <h3 class="form-title">Send a message</h3>
+                    <form id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Name</label>
+                                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input class="form-input" type="text" id="subject" name="subject" placeholder="Opportunity / Collaboration / ...">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea class="form-input form-textarea" id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
             </div>
+
         </div>
     </div>
 </section>
 
-<!-- Footer -->
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
 <footer class="footer">
     <div class="container">
-        <div class="footer-content">
-            <div class="footer-text">
-                <p>&copy; 2026 Rostand Surel. Machine Learning Engineer bridging data, models and production.</p>
-            </div>
-
+        <div class="footer-inner">
+            <p class="footer-text">
+                &copy; 2026 Rostand Surel — ML Engineer bridging data, models and production.
+            </p>
             <div class="footer-links">
-                <a href="https://www.linkedin.com/in/rostand-surel/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/Manda404" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/rostand-surel/" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/Manda404" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+                <a href="assets/cv/Rostand_Surel.pdf" class="footer-link" download>Download CV</a>
             </div>
         </div>
     </div>
 </footer>
 
-<script src="js/interactive-bg.js"></script>
-<script src="js/theme-switcher.js"></script>
-<script src="js/hero-animations.js"></script>
-<script src="js/timeline-debug.js"></script>
-<script src="js/github-contributions.js"></script>
-<script src="js/testimonials.js"></script>
+<!-- ══════════════════════════════════════════
+     SCRIPTS — single file only
+══════════════════════════════════════════ -->
 <script src="js/main.js"></script>
+
+<!-- Education section responsive fix -->
+<style>
+@media (max-width: 768px) {
+    .edu-cert-wrap {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+}
+</style>
+
 </body>
 </html>
