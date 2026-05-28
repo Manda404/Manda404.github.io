@@ -1,204 +1,175 @@
-/* =====================================================
-   THEME SYSTEM — Rostand Surel Portfolio
-   Premium Dark (default) + Light toggle
-   ===================================================== */
-
-/* ---------- DARK THEME — Deep Space Premium ---------- */
+/* Cursor-Themed (Dark/Graphite Blue) Theme */
 [data-theme="dark"] {
-    /* Backgrounds */
-    --bg-primary:        #030712;
-    --bg-secondary:      #080c18;
-    --bg-tertiary:       #0f1629;
-    --bg-card:           rgba(15, 22, 41, 0.6);
-    --bg-card-solid:     #0f1629;
-    --bg-hover:          rgba(139, 92, 246, 0.08);
-    --bg-input:          rgba(15, 22, 41, 0.8);
-    --bg-overlay:        rgba(3, 7, 18, 0.92);
+    --bg-primary: #171b23; /* dark blue/graphite */
+    --bg-secondary: #202736;
+    --section-bg: #141923;
+    --card-bg: rgba(60, 72, 98, 0.12);
+    --hover-bg: rgba(93, 155, 255, 0.12);
+    --input-bg: rgba(60, 72, 98, 0.16);
 
-    /* Text */
-    --text-primary:      #f1f5f9;
-    --text-secondary:    #94a3b8;
-    --text-tertiary:     #64748b;
-    --text-muted:        #334155;
+    --text-primary: #d1e2fa;
+    --text-secondary: #8eb2d9;
 
-    /* Accents — violet + cyan duotone */
-    --accent:            #8b5cf6;
-    --accent-hover:      #a78bfa;
-    --accent-dim:        rgba(139, 92, 246, 0.12);
-    --accent-glow:       rgba(139, 92, 246, 0.35);
-    --accent-2:          #22d3ee;
-    --accent-2-dim:      rgba(34, 211, 238, 0.12);
-    --accent-2-glow:     rgba(34, 211, 238, 0.3);
-    --accent-gold:       #f59e0b;
-    --secondary-accent:  #10b981;
-    --danger:            #ef4444;
-    --warning:           #f59e0b;
+    --accent-color: #5d9bff;
+    --accent-gradient-start: #5d9bff;
+    --accent-hover: #3486ec;
+    --secondary-accent: #33ffc2;
+    --accent-gradient-end: #33ffc2;
+    --success-color: #27c79c;
 
-    /* Borders */
-    --border:            rgba(139, 92, 246, 0.12);
-    --border-subtle:     rgba(255, 255, 255, 0.04);
-    --border-muted:      rgba(100, 116, 139, 0.15);
-    --border-accent:     rgba(139, 92, 246, 0.4);
-    --border-cyan:       rgba(34, 211, 238, 0.35);
+    --border-color: rgba(81, 164, 253, 0.12);
+    --border-hover: rgba(81, 164, 253, 0.22);
 
-    /* Badges */
-    --badge-bg:          rgba(139, 92, 246, 0.1);
-    --badge-text:        #c4b5fd;
-    --badge-border:      rgba(139, 92, 246, 0.25);
+    --badge-bg: rgba(93, 155, 255, 0.13);
+    --badge-text: #aed9fb;
+    --badge-border: rgba(93, 155, 255, 0.22);
 
-    --badge-cyan-bg:     rgba(34, 211, 238, 0.08);
-    --badge-cyan-text:   #67e8f9;
-    --badge-cyan-border: rgba(34, 211, 238, 0.2);
+    --tech-bg: rgba(123, 168, 255, 0.10);
+    --tech-text: #e6f0fa;
+    --tech-border: rgba(93, 155, 255, 0.14);
 
-    --badge-green-bg:    rgba(16, 185, 129, 0.1);
-    --badge-green-text:  #34d399;
-    --badge-green-border:rgba(16, 185, 129, 0.25);
+    --shadow-small: 0 2px 8px rgba(36, 68, 142, 0.21);
+    --shadow-medium: 0 8px 32px rgba(36, 68, 142, 0.36);
+    --shadow-large: 0 20px 64px rgba(36, 68, 142, 0.51);
+    --shadow-accent: rgba(93,155,255, 0.18);
 
-    /* Tags */
-    --tag-bg:            rgba(15, 22, 41, 0.8);
-    --tag-text:          #94a3b8;
-    --tag-border:        rgba(139, 92, 246, 0.15);
-    --tag-hover-bg:      rgba(139, 92, 246, 0.12);
-    --tag-hover-text:    #c4b5fd;
+    --navbar-bg: rgba(23, 27, 35, 0.92);
 
-    /* Shadows */
-    --shadow-sm:         0 1px 3px rgba(0,0,0,0.6);
-    --shadow-md:         0 4px 20px rgba(0,0,0,0.7);
-    --shadow-lg:         0 16px 48px rgba(0,0,0,0.8);
-    --shadow-accent:     0 0 30px rgba(139,92,246,0.25), 0 4px 20px rgba(0,0,0,0.5);
-    --shadow-cyan:       0 0 30px rgba(34,211,238,0.2), 0 4px 20px rgba(0,0,0,0.5);
-    --shadow-card:       0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(139,92,246,0.08);
-    --shadow-glow:       0 0 60px rgba(139,92,246,0.15);
+    /* Neutral color for background objects */
+    --bg-object-color: #6b7280; /* neutral grey */
 
-    /* Navbar */
-    --navbar-bg:         rgba(3, 7, 18, 0.85);
-    --timeline-line:     rgba(139, 92, 246, 0.2);
-
-    /* Terminal */
-    --terminal-bg:       #080c18;
-    --terminal-header:   #0f1629;
-    --terminal-text:     #94a3b8;
-    --terminal-green:    #10b981;
-    --terminal-blue:     #22d3ee;
-    --terminal-purple:   #c4b5fd;
-    --terminal-orange:   #fb923c;
-
-    /* Gradients */
-    --gradient-primary:  linear-gradient(135deg, #8b5cf6, #22d3ee);
-    --gradient-aurora:   linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #22d3ee 100%);
-    --gradient-hero:     radial-gradient(ellipse 80% 60% at 50% -5%,
-                            rgba(139,92,246,0.18) 0%,
-                            rgba(34,211,238,0.06) 40%,
-                            transparent 70%);
-    --gradient-card:     linear-gradient(135deg, rgba(139,92,246,0.05) 0%, rgba(34,211,238,0.02) 100%);
-
-    /* Grid background */
-    --grid-color:        rgba(139, 92, 246, 0.04);
-    --dot-color:         rgba(139, 92, 246, 0.3);
-    --gradient-overlay:  var(--gradient-hero);
+    /* GitHub Contributions Colors - Dark Theme */
+    --contribution-bg: #151b27;
+    --contribution-border: #34405a;
+    --contribution-hover-border: #5d9bff;
+    --contribution-level-0: #232940;
+    --contribution-level-1: #304272;
+    --contribution-level-2: #4c85d1;
+    --contribution-level-3: #5d9bff;
+    --contribution-level-4: #78c0ff;
+    --tooltip-bg: #243d5c;
+    --tooltip-text: #d1e2fa;
+    --tooltip-border: #34405a;
 }
 
-/* ---------- LIGHT THEME ---------- */
+/* Clean Light Theme - Beige Background with Black/Grey Foreground */
 [data-theme="light"] {
-    --bg-primary:        #fafafa;
-    --bg-secondary:      #f4f4f8;
-    --bg-tertiary:       #e8e8f0;
-    --bg-card:           rgba(255, 255, 255, 0.85);
-    --bg-card-solid:     #ffffff;
-    --bg-hover:          rgba(139, 92, 246, 0.06);
-    --bg-input:          rgba(248, 248, 252, 0.9);
-    --bg-overlay:        rgba(255, 255, 255, 0.9);
+    --bg-primary: #faf9f5; /* lighter beige background */
+    --bg-secondary: #f7f5f0;
+    --section-bg: #fcfbf8;
+    --card-bg: rgba(255, 252, 247, 0.95);
+    --hover-bg: rgba(0, 0, 0, 0.04);
+    --input-bg: #fefcf9;
 
-    --text-primary:      #0f172a;
-    --text-secondary:    #475569;
-    --text-tertiary:     #94a3b8;
-    --text-muted:        #cbd5e1;
+    --text-primary: #1a1a1a; /* near black for primary text */
+    --text-secondary: #4a4a4a; /* medium grey for secondary text */
 
-    --accent:            #7c3aed;
-    --accent-hover:      #6d28d9;
-    --accent-dim:        rgba(124, 58, 237, 0.08);
-    --accent-glow:       rgba(124, 58, 237, 0.2);
-    --accent-2:          #0891b2;
-    --accent-2-dim:      rgba(8, 145, 178, 0.08);
-    --accent-2-glow:     rgba(8, 145, 178, 0.15);
-    --accent-gold:       #d97706;
-    --secondary-accent:  #059669;
-    --danger:            #dc2626;
-    --warning:           #d97706;
+    --accent-color: #2c2c2c; /* dark grey accent */
+    --accent-hover: #1a1a1a;
+    --accent-gradient-start: #2c2c2c;
+    --accent-gradient-end: #5a5a5a;
+    --secondary-accent: #6b6b6b;
+    --success-color: #4a7c59;
 
-    --border:            rgba(124, 58, 237, 0.1);
-    --border-subtle:     rgba(0, 0, 0, 0.04);
-    --border-muted:      rgba(148, 163, 184, 0.25);
-    --border-accent:     rgba(124, 58, 237, 0.35);
-    --border-cyan:       rgba(8, 145, 178, 0.3);
+    --border-color: rgba(0, 0, 0, 0.08);
+    --border-hover: rgba(0, 0, 0, 0.15);
 
-    --badge-bg:          rgba(124, 58, 237, 0.08);
-    --badge-text:        #7c3aed;
-    --badge-border:      rgba(124, 58, 237, 0.2);
+    --badge-bg: rgba(0, 0, 0, 0.06);
+    --badge-text: #2c2c2c;
+    --badge-border: rgba(0, 0, 0, 0.12);
 
-    --badge-cyan-bg:     rgba(8, 145, 178, 0.07);
-    --badge-cyan-text:   #0891b2;
-    --badge-cyan-border: rgba(8, 145, 178, 0.18);
+    --tech-bg: rgba(0, 0, 0, 0.04);
+    --tech-text: #3a3a3a;
+    --tech-border: rgba(0, 0, 0, 0.08);
+    
+    --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.08);
+    --shadow-large: 0 20px 64px rgba(0, 0, 0, 0.12);
+    --shadow-accent: rgba(0, 0, 0, 0.1);
 
-    --badge-green-bg:    rgba(5, 150, 105, 0.08);
-    --badge-green-text:  #059669;
-    --badge-green-border:rgba(5, 150, 105, 0.2);
+    --navbar-bg: rgba(250, 249, 245, 0.95);
 
-    --tag-bg:            rgba(232, 232, 240, 0.8);
-    --tag-text:          #475569;
-    --tag-border:        rgba(124, 58, 237, 0.12);
-    --tag-hover-bg:      rgba(124, 58, 237, 0.08);
-    --tag-hover-text:    #7c3aed;
+    /* Neutral color for background objects */
+    --bg-object-color: #9ca3af; /* neutral grey */
 
-    --shadow-sm:         0 1px 3px rgba(15,23,42,0.08);
-    --shadow-md:         0 4px 20px rgba(15,23,42,0.1);
-    --shadow-lg:         0 16px 48px rgba(15,23,42,0.12);
-    --shadow-accent:     0 0 30px rgba(124,58,237,0.15), 0 4px 20px rgba(15,23,42,0.1);
-    --shadow-cyan:       0 0 30px rgba(8,145,178,0.12), 0 4px 20px rgba(15,23,42,0.08);
-    --shadow-card:       0 4px 24px rgba(15,23,42,0.08), 0 0 0 1px rgba(124,58,237,0.06);
-    --shadow-glow:       0 0 60px rgba(124,58,237,0.08);
-
-    --navbar-bg:         rgba(250, 250, 250, 0.88);
-    --timeline-line:     rgba(124, 58, 237, 0.18);
-
-    --terminal-bg:       #f4f4f8;
-    --terminal-header:   #e8e8f0;
-    --terminal-text:     #475569;
-    --terminal-green:    #059669;
-    --terminal-blue:     #0891b2;
-    --terminal-purple:   #7c3aed;
-    --terminal-orange:   #c2410c;
-
-    --gradient-primary:  linear-gradient(135deg, #7c3aed, #0891b2);
-    --gradient-aurora:   linear-gradient(135deg, #7c3aed 0%, #db2777 50%, #0891b2 100%);
-    --gradient-hero:     radial-gradient(ellipse 80% 60% at 50% -5%,
-                            rgba(124,58,237,0.1) 0%,
-                            rgba(8,145,178,0.04) 40%,
-                            transparent 70%);
-    --gradient-card:     linear-gradient(135deg, rgba(124,58,237,0.04) 0%, rgba(8,145,178,0.02) 100%);
-
-    --grid-color:        rgba(124, 58, 237, 0.03);
-    --dot-color:         rgba(124, 58, 237, 0.25);
-    --gradient-overlay:  var(--gradient-hero);
+    /* GitHub Contributions Colors - Light (Beige) Theme */
+    --contribution-bg: #fcfbf8;
+    --contribution-border: rgba(0, 0, 0, 0.1);
+    --contribution-hover-border: #2c2c2c;
+    --contribution-level-0: #f7f5f0;
+    --contribution-level-1: #e0d5c4;
+    --contribution-level-2: #c4b5a0;
+    --contribution-level-3: #8b7d6b;
+    --contribution-level-4: #5a5a5a;
+    --tooltip-bg: #ffffff;
+    --tooltip-text: #1a1a1a;
+    --tooltip-border: rgba(0, 0, 0, 0.15);
 }
 
-/* ---------- BASE ---------- */
+/* Theme-specific styles */
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
 }
 
-body.theme-ready * {
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
 .navbar {
     background: var(--navbar-bg);
-    border-bottom: 1px solid var(--border);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+
+/* Smooth theme transition */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Theme toggle animations */
+.theme-toggle {
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-icon {
+    transition: transform 0.3s ease;
+}
+
+[data-theme="light"] .theme-icon {
+    transform: rotate(180deg);
+}
+
+/* Interactive background colors for themes */
+.bg-line {
+    stroke: var(--accent-color);
+    opacity: 0.3;
+}
+
+.bg-particle {
+    fill: var(--accent-color);
+    opacity: 0.6;
+}
+
+/* Light theme specific adjustments */
+[data-theme="light"] .floating-card {
+    box-shadow: var(--shadow-medium);
+    background: rgba(255, 252, 247, 0.95);
+    backdrop-filter: blur(9px);
+}
+
+[data-theme="light"] .project-card,
+[data-theme="light"] .tech-stack,
+[data-theme="light"] .form {
+    background: rgba(255, 252, 247, 0.95);
+    backdrop-filter: blur(9px);
+    box-shadow: var(--shadow-medium);
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .floating-card {
+    background: rgba(60, 72, 98, 0.10);
+    border: 1px solid rgba(81, 164, 253, 0.12);
+}
+
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .tech-stack,
+[data-theme="dark"] .form {
+    background: rgba(60, 72, 98, 0.10);
+    border: 1px solid rgba(81, 164, 253, 0.12);
 }
