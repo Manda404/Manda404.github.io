@@ -937,81 +937,107 @@
 <!-- Contact Section -->
 <section class="contact" id="contact">
     <div class="container">
+        <div class="contact-header">
+            <span class="section-badge">Get In Touch</span>
+            <h2 class="section-title">
+                Let’s build data products that move from idea to production.
+            </h2>
+            <p class="contact-description">
+                I help teams connect data, machine learning and production systems — from scalable pipelines
+                to predictive models, MLOps workflows and Generative AI use cases.
+            </p>
+        </div>
+
         <div class="contact-content">
             <div class="contact-info">
-                <span class="section-badge">Get In Touch</span>
-                <h2 class="section-title">Looking for someone who can connect data, ML and production?</h2>
-                <p class="contact-description">
-                    I am open to Machine Learning Engineering, Data Science and MLOps opportunities — especially
-                    roles involving Databricks, predictive modeling, scalable data pipelines and Generative AI use cases.
-                </p>
+                <div class="contact-card-main">
+                    <div class="availability-pill">
+                        <span class="status-dot"></span>
+                        Open to ML Engineering, Data Science & MLOps roles
+                    </div>
+
+                    <h3>Looking for someone who can connect data, ML and production?</h3>
+
+                    <p>
+                        I am especially interested in opportunities involving Databricks, predictive modeling,
+                        scalable data pipelines, model deployment and Generative AI solutions.
+                    </p>
+
+                    <div class="contact-highlights">
+                        <span>Databricks</span>
+                        <span>MLOps</span>
+                        <span>Machine Learning</span>
+                        <span>GenAI</span>
+                    </div>
+                </div>
 
                 <div class="contact-details">
-                    <div class="contact-item">
+                    <a class="contact-item" href="mailto:rostandsurel@yahoo.com">
                         <div class="contact-icon">📧</div>
                         <div>
                             <div class="contact-label">Email</div>
-                            <a href="mailto:rostandsurel@yahoo.com" class="contact-value">
-                                rostandsurel@yahoo.com
-                            </a>
+                            <div class="contact-value">rostandsurel@yahoo.com</div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="contact-item">
+                    <a class="contact-item" href="https://www.linkedin.com/in/rostand-surel/" target="_blank" rel="noopener noreferrer">
                         <div class="contact-icon">💼</div>
                         <div>
                             <div class="contact-label">LinkedIn</div>
-                            <a href="https://www.linkedin.com/in/rostand-surel/" class="contact-value" target="_blank" rel="noopener noreferrer">
-                                linkedin.com/in/rostand-surel
-                            </a>
+                            <div class="contact-value">linkedin.com/in/rostand-surel</div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="contact-item">
+                    <a class="contact-item" href="https://github.com/Manda404" target="_blank" rel="noopener noreferrer">
                         <div class="contact-icon">💻</div>
                         <div>
                             <div class="contact-label">GitHub</div>
-                            <a href="https://github.com/Manda404" class="contact-value" target="_blank" rel="noopener noreferrer">
-                                github.com/Manda404
-                            </a>
+                            <div class="contact-value">github.com/Manda404</div>
                         </div>
-                    </div>
+                    </a>
 
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
                         <div>
                             <div class="contact-label">Location</div>
-                            <span class="contact-value">Versailles, France</span>
+                            <div class="contact-value">Versailles, France</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="contact-form">
+            <div class="contact-form-wrapper">
                 <form class="form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                    <div class="form-header">
+                        <h3>Send me a message</h3>
+                        <p>Tell me about your project, opportunity or collaboration idea.</p>
                     </div>
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
                     </div>
 
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
+                        <input type="text" id="subject" name="subject" placeholder="How can I help?" required>
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary contact-submit">
                         <span>Send Message</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
                         </svg>
                     </button>
