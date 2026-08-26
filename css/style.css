@@ -211,6 +211,13 @@ h3 { margin-bottom: 0.85rem; font-size: 1.4rem; font-weight: 720; }
 .metric-visual strong { color: var(--mint); font-size: clamp(3rem, 7vw, 5.5rem); line-height: 1; letter-spacing: -0.06em; }
 .metric-visual span { margin-top: 0.55rem; color: var(--text-soft); font-size: 0.7rem; font-weight: 720; letter-spacing: 0.08em; text-transform: uppercase; }
 
+.recruiter-summary { padding: 1.4rem 0; border-bottom: 1px solid var(--line); background: var(--bg-elevated); }
+.recruiter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--line); overflow: hidden; }
+.recruiter-grid div { padding: 1rem; background: var(--surface); }
+.recruiter-grid span, .recruiter-grid strong { display: block; }
+.recruiter-grid span { margin-bottom: 0.35rem; color: var(--accent-strong); font-size: 0.61rem; font-weight: 760; letter-spacing: 0.08em; text-transform: uppercase; }
+.recruiter-grid strong { font-size: 0.78rem; line-height: 1.45; }
+
 .industrial-lab { border-block: 1px solid var(--line); background: linear-gradient(145deg, var(--bg), var(--accent-soft)); }
 .lab-disclaimer { display: inline-flex; margin-top: 0.65rem; color: var(--mint); font-size: 0.68rem; font-weight: 760; letter-spacing: 0.07em; text-transform: uppercase; }
 .lab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
@@ -229,6 +236,13 @@ h3 { margin-bottom: 0.85rem; font-size: 1.4rem; font-weight: 720; }
 .target-kpis strong { font-size: 0.75rem; line-height: 1.5; }
 .concept-status { display: inline-flex; margin-bottom: 1.25rem; padding: 0.4rem 0.7rem; border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--line)); border-radius: 999px; color: var(--accent-strong); font-size: 0.66rem; font-weight: 780; letter-spacing: 0.08em; text-transform: uppercase; }
 .guardrail { border-left-color: var(--accent); }
+.concept-links { display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--line); }
+.concept-links a { display: flex; flex-direction: column; min-height: 11rem; padding: 1.4rem; color: var(--text); text-decoration: none; }
+.concept-links a + a { border-left: 1px solid var(--line); }
+.concept-links a:hover { background: var(--surface); }
+.concept-links span { color: var(--accent-strong); font-size: 0.64rem; font-weight: 760; letter-spacing: 0.08em; text-transform: uppercase; }
+.concept-links strong { margin: auto 0 0.35rem; font-size: 1.12rem; }
+.concept-links small { color: var(--text-muted); }
 
 .method-grid, .experience-layout { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(3rem, 8vw, 8rem); align-items: start; }
 .sticky-heading { position: sticky; top: 8rem; margin-bottom: 0; }
@@ -311,7 +325,9 @@ h3 { margin-bottom: 0.85rem; font-size: 1.4rem; font-weight: 720; }
   .proof-grid > div:nth-child(2) { border-right: 0; }
   .proof-grid > div:first-child, .proof-grid > div:nth-child(3) { padding-left: 0; }
   .proof-grid > div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-  .expertise-grid, .signature-grid, .lab-grid { grid-template-columns: 1fr; }
+  .expertise-grid, .signature-grid, .lab-grid, .recruiter-grid { grid-template-columns: 1fr; }
+  .concept-links { grid-template-columns: 1fr; }
+  .concept-links a + a { border-top: 1px solid var(--line); border-left: 0; }
   .signature-agent { grid-column: auto; }
   .expertise-card { min-height: 19rem; }
   .split-heading { grid-template-columns: 1fr; gap: 1rem; }
