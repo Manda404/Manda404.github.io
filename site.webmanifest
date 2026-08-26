@@ -1,0 +1,12 @@
+{
+  "name": "Portfolio de Rostand Surel",
+  "short_name": "Rostand Surel",
+  "description": "ML & AI Engineer — Data, MLOps et GenAI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "icons": [
+    {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
+}
