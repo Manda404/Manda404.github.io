@@ -71,7 +71,7 @@
         <span class="sr-only">Ouvrir le menu</span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
       <nav class="navigation" id="navigation" aria-label="Navigation principale" data-navigation>
-        <a href="#profil">Profil</a><a href="#realisations">Réalisations</a><a href="#experience">Expérience</a><a href="#contact">Contact</a>
+        <a href="#profil">Profil</a><a href="#realisations">Réalisations</a><a href="#github">GitHub</a><a href="#experience">Expérience</a><a href="#contact">Contact</a>
         <a class="nav-cv" href="assets/cv/Rostand-Surel-CV.pdf" download>Télécharger le CV</a>
         <button class="theme-toggle" type="button" data-theme-toggle>
           <span class="sr-only">Changer de thème</span>
@@ -88,7 +88,7 @@
           <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Disponible pour une opportunité · Paris</p>
           <h1><span>ML &amp; AI Engineer</span><br>5 ans d'expérience en systèmes data et IA.</h1>
           <p class="hero-lead">Je conçois et mets en production des modèles ML, pipelines Databricks et applications RAG/AI Agents. Mon profil combine Data Engineering, Machine Learning et MLOps.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#realisations">Voir mes réalisations</a><a class="button button-secondary" href="assets/cv/Rostand-Surel-CV.pdf" download>Télécharger mon CV</a></div>
+          <div class="hero-actions"><a class="button button-primary" href="#realisations">Voir mes réalisations en mission</a><a class="button button-secondary" href="assets/cv/Rostand-Surel-CV.pdf" download>Télécharger mon CV</a></div>
           <div class="social-proof" aria-label="Liens professionnels">
             <a href="https://www.linkedin.com/in/rostand-surel/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/Manda404" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -120,7 +120,55 @@
     </div></section>
 
     <section class="section section-muted" id="realisations"><div class="shell">
-      <div class="section-heading split-heading"><div><p class="eyebrow">Réalisations avec code public</p><h2>Trois projets pour vérifier concrètement mes compétences.</h2></div><p>Une plateforme AI Agent, une application RAG et un système Machine Learning. Ici, chaque projet correspond à du code existant et consultable.</p></div>
+      <div class="section-heading split-heading"><div><p class="eyebrow">Réalisations en entreprise</p><h2>D'abord l'impact livré en mission.</h2></div><p>Chaque expérience est présentée comme une preuve : contexte métier, contribution technique, résultat et technologies utilisées. Les détails confidentiels restent volontairement limités.</p></div>
+      <div class="accomplishment-grid">
+        <article class="accomplishment-card featured-accomplishment">
+          <div class="accomplishment-top"><span>2026 · Bull / Eviden</span><strong>Consultant AI Engineer</strong></div>
+          <h3>Agent RAG pour les connaissances d'entreprise</h3>
+          <p>Automatisation de l'ingestion SharePoint/GitHub, structuration des connaissances dans Unity Catalog et exposition via FastAPI pour une plateforme Agentic AI.</p>
+          <div class="accomplishment-result"><span>Résultat</span><strong>Prototype opérationnel intégrant ingestion, knowledge base et exploitation RAG.</strong></div>
+          <ul class="tag-list"><li>Databricks</li><li>Auto Loader</li><li>Unity Catalog</li><li>RAG</li><li>FastAPI</li></ul>
+          <a class="signature-link" href="projets/enterprise-rag.html">Lire l'étude de cas <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="accomplishment-card">
+          <div class="accomplishment-top"><span>2025 · AXA</span><strong>Consultant Data Scientist</strong></div>
+          <h3>Churn prediction à grande échelle</h3>
+          <p>Transformation d'environ 5 millions de lignes sur Databricks, feature engineering client, entraînement XGBoost/CatBoost et déploiement avec Model Serving.</p>
+          <div class="accomplishment-result"><span>Résultat</span><strong>+18 % de précision sur les clients à risque pour les campagnes de rétention.</strong></div>
+          <ul class="tag-list"><li>PySpark</li><li>MLflow</li><li>CatBoost</li><li>Azure Pipelines</li><li>CRM</li></ul>
+          <a class="signature-link" href="projets/churn-mlops.html">Lire l'étude de cas <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="accomplishment-card">
+          <div class="accomplishment-top"><span>2024 · Safran Seats</span><strong>Data Scientist</strong></div>
+          <h3>Analyse des tests de confort aéronautique</h3>
+          <p>Architecture de données, pipelines d'ingestion/transformation et dashboards interactifs pour accélérer l'analyse des données expérimentales des sièges d'avion.</p>
+          <div class="accomplishment-result"><span>Résultat</span><strong>+65 % de gain de temps dans l'analyse des tests de confort.</strong></div>
+          <ul class="tag-list"><li>Data Architecture</li><li>ETL</li><li>Dashboards</li><li>R&amp;D</li></ul>
+        </article>
+
+        <article class="accomplishment-card">
+          <div class="accomplishment-top"><span>2020-2023 · Sky TV</span><strong>Consultant Data Scientist</strong></div>
+          <h3>Segmentation prédictive pour le CRM</h3>
+          <p>Consolidation des données clients, préparation des jeux ML, modèles XGBoost, suivi MLflow et analyse d'A/B tests pour améliorer le ciblage marketing.</p>
+          <div class="accomplishment-result"><span>Résultat</span><strong>+24 % d'efficacité des campagnes ciblées sur les segments à haut potentiel.</strong></div>
+          <ul class="tag-list"><li>Spark SQL</li><li>XGBoost</li><li>MLflow</li><li>A/B testing</li><li>CRM</li></ul>
+        </article>
+
+        <article class="accomplishment-card">
+          <div class="accomplishment-top"><span>2020-2023 · Kuwait Petroleum</span><strong>Consultant Data Engineer</strong></div>
+          <h3>Plateforme data pour la distribution</h3>
+          <p>Modernisation de l'architecture data, ingestion multi-source avec NiFi, tables Hive, transformations PySpark et orchestration Airflow des traitements quotidiens.</p>
+          <div class="accomplishment-result"><span>Résultat</span><strong>Réduction des traitements manuels et fiabilisation des flux data.</strong></div>
+          <ul class="tag-list"><li>Apache NiFi</li><li>HDFS</li><li>Hive</li><li>PySpark</li><li>Airflow</li></ul>
+          <a class="signature-link" href="projets/data-platform.html">Lire l'étude de cas <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div></section>
+
+    <section class="section" id="github"><div class="shell">
+      <div class="section-heading split-heading"><div><p class="eyebrow">Preuves GitHub</p><h2>Le code public complète le parcours entreprise.</h2></div><p>Le profil GitHub public montre 18 dépôts, dont plusieurs projets orientés RAG, ML industriel, santé et APIs. J'en mets trois en avant pour vérifier concrètement la stack.</p></div>
       <div class="signature-grid">
         <article class="signature-card signature-agent">
           <div class="signature-head"><span class="project-kind">01 · AI Agent</span><span class="proof-pill proof-public">Code public</span></div>
@@ -142,13 +190,13 @@
           <span class="signature-link">Inspecter le code <span aria-hidden="true">↗</span></span>
         </a>
 
-        <a class="signature-card" href="https://github.com/Manda404/Health-Lifestyle-Diabetes" target="_blank" rel="noopener noreferrer">
+        <a class="signature-card" href="https://github.com/Manda404/BankModelFactory" target="_blank" rel="noopener noreferrer">
           <div class="signature-head"><span class="project-kind">03 · Machine Learning</span><span class="proof-pill proof-public">Code public</span></div>
-          <div class="metric-visual"><strong>3</strong><span>modèles de boosting comparés</span></div>
-          <h3>Health &amp; Lifestyle Diabetes</h3>
-          <p>Un système ML de prédiction du risque de diabète : données de santé, feature engineering, déséquilibre des classes, calibration puis inférence observable.</p>
-          <div class="signature-proof"><span>Ce que ça prouve</span><strong>Clean Architecture, expérimentation MLflow, seuil métier explicite et API prête pour le monitoring.</strong></div>
-          <ul class="tag-list"><li>CatBoost</li><li>MLflow</li><li>FastAPI</li><li>Prometheus</li></ul>
+          <div class="metric-visual"><strong>3</strong><span>modèles ML comparés et servis</span></div>
+          <h3>BankModelFactory</h3>
+          <p>Pipeline end-to-end pour du marketing bancaire prédictif : preprocessing, entraînement, API FastAPI, CI/CD et intégration cloud.</p>
+          <div class="signature-proof"><span>Ce que ça prouve</span><strong>Approche produit autour d'un modèle : entraînement, serving API et industrialisation.</strong></div>
+          <ul class="tag-list"><li>CatBoost</li><li>FastAPI</li><li>CI/CD</li><li>Cloud</li></ul>
           <span class="signature-link">Inspecter le code <span aria-hidden="true">↗</span></span>
         </a>
       </div>
@@ -163,15 +211,6 @@
       </div>
     </div></section>
 
-    <section class="section section-muted" id="missions"><div class="shell">
-      <div class="section-heading"><p class="eyebrow">Preuves en entreprise</p><h2>Ce que j'ai réalisé dans mes missions.</h2><p>Trois exemples issus de mon expérience professionnelle. Les informations confidentielles sont limitées ; les responsabilités et résultats correspondent au CV.</p></div>
-      <div class="case-list">
-        <article class="case-card"><div class="case-number" aria-hidden="true">01</div><div class="case-content"><div class="case-meta"><span>Agentic AI · 2026</span><span>Bulls</span></div><h3>Agent RAG pour les connaissances d'entreprise</h3><p>Automatiser l'ingestion de contenus SharePoint et GitHub, structurer la connaissance dans Unity Catalog et la rendre interrogeable depuis une plateforme Agentic AI.</p><div class="case-outcome"><span>Résultat</span><strong>Prototype opérationnel de bout en bout</strong></div><ul class="tag-list"><li>Databricks</li><li>Auto Loader</li><li>RAG</li><li>FastAPI</li></ul></div><a class="case-link" href="projets/enterprise-rag.html" aria-label="Lire l'étude de cas Agent RAG">Lire le cas <span aria-hidden="true">↗</span></a></article>
-        <article class="case-card"><div class="case-number" aria-hidden="true">02</div><div class="case-content"><div class="case-meta"><span>ML Engineering · 2025</span><span>AXA</span></div><h3>Prédiction du churn à l'échelle sur Databricks</h3><p>Transformer près de cinq millions de lignes, entraîner des modèles robustes et intégrer les scores de risque aux applications CRM.</p><div class="case-outcome"><span>Résultat</span><strong>+18 % de précision sur les clients à risque</strong></div><ul class="tag-list"><li>PySpark</li><li>XGBoost</li><li>CatBoost</li><li>Model Serving</li></ul></div><a class="case-link" href="projets/churn-mlops.html" aria-label="Lire l'étude de cas Churn MLOps">Lire le cas <span aria-hidden="true">↗</span></a></article>
-        <article class="case-card"><div class="case-number" aria-hidden="true">03</div><div class="case-content"><div class="case-meta"><span>Data Engineering · 2020–2023</span><span>Kuwait Petroleum</span></div><h3>Plateforme data pour les opérations de distribution</h3><p>Automatiser l'ingestion multi-source, structurer les données distribuées et fiabiliser les traitements quotidiens de bout en bout.</p><div class="case-outcome"><span>Résultat</span><strong>Flux industrialisés et traitements manuels réduits</strong></div><ul class="tag-list"><li>Apache NiFi</li><li>HDFS</li><li>Hive</li><li>PySpark</li><li>Airflow</li></ul></div><a class="case-link" href="projets/data-platform.html" aria-label="Lire l'étude de cas Data Platform">Lire le cas <span aria-hidden="true">↗</span></a></article>
-      </div>
-    </div></section>
-
     <section class="section" id="methode"><div class="shell method-grid">
       <div class="section-heading sticky-heading"><p class="eyebrow">Méthode</p><h2>La performance d'un modèle ne suffit pas.</h2><p>Je conçois le système autour de la décision métier, de la qualité des données et des conditions réelles de production.</p></div>
       <ol class="method-list"><li><span>01</span><div><h3>Cadrer la décision</h3><p>Clarifier l'utilisateur, le coût de l'erreur, la métrique de succès et les contraintes avant de choisir la technologie.</p></div></li><li><span>02</span><div><h3>Construire pour la fiabilité</h3><p>Versionner données, code et modèles ; tester les transformations ; rendre les résultats reproductibles et explicables.</p></div></li><li><span>03</span><div><h3>Industrialiser l'usage</h3><p>Déployer avec CI/CD, servir au bon niveau de latence et intégrer la sortie dans le workflow métier.</p></div></li><li><span>04</span><div><h3>Mesurer dans le temps</h3><p>Suivre qualité, dérive, coût et adoption afin que le système continue à produire de la valeur après sa mise en ligne.</p></div></li></ol>
@@ -180,7 +219,7 @@
     <section class="section section-muted" id="experience"><div class="shell experience-layout">
       <div class="section-heading sticky-heading"><p class="eyebrow">Expérience</p><h2>5 ans entre data, ML et mise en production.</h2><a class="text-link" href="assets/cv/Rostand-Surel-CV.pdf" download>Consulter le CV complet <span aria-hidden="true">↓</span></a></div>
       <div class="timeline">
-        <article><div class="timeline-date">Fév. 2026 — Aujourd'hui</div><div><h3>Consultant AI Engineer</h3><p class="company">Bulls · Bezons, France</p><p>Agent RAG, ingestion SharePoint/GitHub, Unity Catalog et intégration FastAPI dans une plateforme Agentic AI.</p></div></article>
+        <article><div class="timeline-date">Fév. 2026 — Aujourd'hui</div><div><h3>Consultant AI Engineer</h3><p class="company">Bull / Eviden · Bezons, France</p><p>Agent RAG, ingestion SharePoint/GitHub, Unity Catalog et intégration FastAPI dans une plateforme Agentic AI.</p></div></article>
         <article><div class="timeline-date">Jan. 2025 — Jan. 2026</div><div><h3>Consultant Data Scientist</h3><p class="company">AXA · Nanterre, France</p><p>Churn prediction à grande échelle, packages Python testés, CI/CD Azure Pipelines et Databricks Model Serving.</p></div></article>
         <article><div class="timeline-date">Avr. 2024 — Déc. 2024</div><div><h3>Data Scientist</h3><p class="company">Safran Seats · Issoudun, France</p><p>Architecture data, pipelines et dashboards pour accélérer l'analyse des essais de confort aéronautique.</p></div></article>
         <article><div class="timeline-date">Sept. 2020 — Nov. 2023</div><div><h3>Consultant Data Engineer / Data Scientist</h3><p class="company">ICTeam · Milan, Italie</p><p>Segmentation prédictive pour Sky TV et modernisation de pipelines data pour Kuwait Petroleum.</p></div></article>

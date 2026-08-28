@@ -18,9 +18,9 @@ La première organisation plaçait trop tôt les projets techniques et les conce
 2. **Proposition de valeur** : concevoir et industrialiser ML, data et GenAI.
 3. **Preuves chiffrées** : expérience, volume de données, impact et certifications.
 4. **Résumé recruteur** : postes ciblés, spécialité, stack et différenciation.
-5. **Réalisations vérifiables** : uniquement les projets avec code public.
-6. **Expertise** : trois familles de compétences.
-7. **Preuves en entreprise** : Bulls, AXA et Kuwait Petroleum.
+5. **Réalisations en entreprise** : Bull / Eviden, AXA, Safran Seats, Sky TV et Kuwait Petroleum.
+6. **Preuves GitHub** : uniquement les projets avec code public.
+7. **Expertise** : trois familles de compétences.
 8. **Expérience et certifications** : chronologie et validation des compétences.
 9. **Industrial AI Agent Lab** : concepts R&D clairement présentés comme non réalisés.
 10. **Contact** : appel à l'action direct.

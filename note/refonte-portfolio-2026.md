@@ -6,7 +6,7 @@ Ce document complète l'audit `etat-de-l-art-portfolio.md` et décrit les décis
 
 Le CV `assets/cv/ML_Engineer_Rostand_Surel___LLM.pdf`, daté du 26 août 2026, a été retenu comme source la plus récente. Une copie publique stable est disponible sous `assets/cv/Rostand-Surel-CV.pdf`.
 
-Éléments alignés : 5 ans d'expérience, localisation Paris, mission Bulls depuis février 2026, fin de mission AXA en janvier 2026 et quatre certifications Databricks.
+Éléments alignés : 5 ans d'expérience, localisation Paris, mission Bull / Eviden depuis février 2026, fin de mission AXA en janvier 2026 et quatre certifications Databricks.
 
 ## Positionnement retenu
 
@@ -19,9 +19,10 @@ Ce positionnement conserve la profondeur Data Engineering, valorise l'expérienc
 - suppression du faux formulaire de contact ;
 - suppression des témoignages concernant une autre personne ;
 - remplacement des projets conceptuels et liens factices par trois études de cas internes ;
-- ajout d'une vitrine « projets signature » immédiatement après le hero : AI Agent professionnel, RAG public et pipeline ML public ;
+- ajout d'une vitrine « réalisations en entreprise » immédiatement après le résumé recruteur : Bull / Eviden, AXA, Safran Seats, Sky TV et Kuwait Petroleum ;
+- ajout d'une vitrine GitHub après les réalisations : AI Agent, RAG public et pipeline ML public ;
 - remplacement du projet AI Agent principal par le dépôt public Agentic-AI-Chat-System et création d'une étude de cas dédiée ;
-- ajout de preuves de code vérifiées : AI-Rag-Philosopher-Chatbot et Health-Lifestyle-Diabetes ;
+- ajout de preuves de code vérifiées : AI-Rag-Philosopher-Chatbot et BankModelFactory ;
 - remplacement de la timeline animée par une chronologie statique ;
 - suppression du canvas, des marquees et des animations permanentes ;
 - menu mobile sémantique, lien d'évitement, focus visible et mode mouvement réduit ;
