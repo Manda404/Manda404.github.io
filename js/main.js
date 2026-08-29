@@ -83,7 +83,7 @@
 
   const revealElements = document.querySelectorAll([
     '.section-heading', '.recruiter-grid > div', '.signature-card',
-    '.expertise-card', '.case-card', '.method-list > li',
+    '.accomplishment-card', '.expertise-card', '.case-card', '.method-list > li',
     '.timeline > article', '.cert-grid > li', '.concept-links > a',
     '.contact-card', '.case-article > section', '.case-facts > div'
   ].join(','));
@@ -106,7 +106,7 @@
     revealElements.forEach((element) => revealObserver.observe(element));
   }
 
-  const tiltCards = document.querySelectorAll('.signature-card, .expertise-card');
+  const tiltCards = document.querySelectorAll('.signature-card, .accomplishment-card, .expertise-card');
   if (!motionQuery.matches && window.matchMedia('(pointer: fine)').matches) {
     tiltCards.forEach((card) => {
       card.classList.add('tilt-card');
